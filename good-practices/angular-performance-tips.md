@@ -183,9 +183,23 @@ suitable in a particular use case.
 Avoid (ab)using filters in templates
 ====================================
 
-Filters are so convenient, right? Let's display the first 100 characters of
-every user's chosen email signature, with some potentially "bad" words filtered
-out, you know, just in case:
+UPDATE: Filters in Angular 1.3 have been revamped and are assumed to be
+_stateless_ by default, i.e. their result depends only on the input parameters
+and not on any kind of internal state. If the input to a filter does not
+change, the filter yields the same result as well. Angular uses this fact
+and does not invoke a (stateless) filter in every $digest cycle anymore, unless
+it detects that its input value and/or parameters have changed.
+
+> A filter can be marked as stateful by setting its `$stateful` flag to `true`,
+> e.g. `myFilterFunc.$stateful = true;`
+
+However, for Angular versions prior to 1.3 and for _stateful_ filters, one
+needs to be aware of the impacts on the $digest cycle's execution time. Let's
+see why.
+
+Imagine a filter that displays the first 100 characters of every user's
+chosen email signature, with some potentially "bad" words filtered out, you
+know, just in case:
 
 ```html
 <ul ng-repeat="user in userList">
