@@ -1,0 +1,8 @@
+# Placeholder for OpenAPI specification files
+# 
+# Add your OpenAPI/Swagger specification files here:
+# - superdesk-core.yaml
+# - superdesk-planning.yaml
+#
+# These will be automatically generated from the API documentation
+# or can be manually created following OpenAPI 3.0 specification.
