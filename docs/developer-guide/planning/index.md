@@ -498,7 +498,7 @@ npm run e2e
 
 - [Repository](https://github.com/superdesk/superdesk-planning)
 - [Planning User Guide](/docs/user-guide) (coming soon)
-- [API Reference](/docs/api/superdesk-planning)
+- [API Reference](/docs/api)
 
 ## Next Steps
 

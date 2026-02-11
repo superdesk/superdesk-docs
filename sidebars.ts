@@ -45,6 +45,11 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'API Reference',
+      items: ['api/index'],
+    },
+    {
+      type: 'category',
       label: 'Contributing',
       items: ['contributing/index'],
     },

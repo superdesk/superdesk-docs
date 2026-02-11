@@ -299,7 +299,7 @@ class MyValidator(Validator):
 ## Resources
 
 - [Repository](https://github.com/superdesk/superdesk-core)
-- [API Documentation](/docs/api/superdesk-core)
+- [API Documentation](/docs/api)
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Eve Documentation](https://docs.python-eve.org/)
 
