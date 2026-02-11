@@ -51,6 +51,10 @@ const config: Config = {
             spec: 'static/openapi/superdesk-core.yaml',
             route: '/api/superdesk-core-direct/',
           },
+          {
+            spec: 'static/openapi/superdesk-production-api.yaml',
+            route: '/api/production-api/',
+          },
         ],
         theme: {
           primaryColor: '#1eb06c',
