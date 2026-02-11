@@ -36,6 +36,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/superdesk/superdesk-docs/tree/master/',
+          docItemComponent: '@theme/ApiItem',
         },
         blog: false,
         theme: {

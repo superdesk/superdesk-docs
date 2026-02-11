@@ -1,0 +1,71 @@
+---
+id: create-show
+title: "Create Show"
+description: "Create Show"
+sidebar_label: "Create Show"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVcFS2zAQ/RXPO6skTWgIvlGmBw4dMoSeMhlGsZZExJaEJAMZj/+9szJpQqDppUd8sOPV7tvdt8+bBlEuA/IZbmqj7LMJmAt4eqwpxO9WbZA36VV7Usijr0mgsCaSiXwknSt1IaO2pvcQrGFbKFZUSf4VN46Qwy4eqIgQe0AzRB1L4mTOW0c+agopJJl3sSF6bZYQoBdZOT7CT+nX5NEKKAqF146z/yPEeqPNMgsr+8yBrpTGkLpTtZcH0aauFuQhcG99JSNy3JdWxn244ajfP0iOSYeYMmRb2EybLFBhjQonnLbwJCOpu8XmeLmjwfl4dDo8PT8bjEfDEQ3Hg+LstCCILT+4TpxeKYYtZYh3tVP/H7vdGV/1MU0MtnziKThrQje3Qf8rP96Sctn1i0/JfEqm08xH+siSg0BFcWUVcjgbmDwn4wo5esxPgEAg/0Sel1WD2pd8JJ3GIei0duQVhXV2MbnKpikI7VyAxXaz22w/tv39UdBWJoeIb6TwkRK66e6P6hhn77j/u3MroM293a9x1952Y3OfEGBuunoHJ9+SYm2IlUxCNbKid3x//ClEeok9V0ptGCPx3LyOYoZuFHOBFY8on6FpFjLQL1+2LZsfa/Ib5LO5wJP0Wi645Nm8FViRVOTT7NbEPV92G+HLLadl97Lm9O+2Qyu2ERdFQS4e9Z3vqWhyPb2FwOL1T6yyimO85Nb5ngMCNrWf1kiyNSilWdZyyb4dJl+/AZg3Y+o=
+sidebar_class_name: "post api-method"
+info_path: docs/api/superdesk-core/superdesk-rundowns-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Show"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/shows"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create Show
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["title"],"properties":{"title":{"type":"string","example":"Marker"},"description":{"type":"string","example":"Morning show"},"planned_duration":{"type":"number","format":"float","example":3600,"description":"Planned show duration in seconds."},"created_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"last_updated_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownShow"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Created","content":{"application/json":{"schema":{"type":"object","required":["title"],"properties":{"title":{"type":"string","example":"Marker"},"description":{"type":"string","example":"Morning show"},"planned_duration":{"type":"number","format":"float","example":3600,"description":"Planned show duration in seconds."},"created_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"last_updated_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownShow"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

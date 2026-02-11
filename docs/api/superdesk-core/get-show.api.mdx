@@ -1,0 +1,71 @@
+---
+id: get-show
+title: "Get Show"
+description: "Get Show"
+sidebar_label: "Get Show"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1P4zAQ/SvRnHYli1Ztt0BuHFYIrVYg2D1VFZrG08Y0sY09Aaoo/301bkpLizhtLklm/D7yPE4LjKsI+QzuG6vdq40wVxAoemcjRchbGA2HctMUi2A8G2chh9tfoKBwlsmydNH7yhQo3cFTlCUtxKKkGuWJN54gB7d4ooJB+J8bE0iLLhuuSER9cJ4Cm63qtrzHRg7GrkABvWHtpQW/MawpQKc+evsS4oI1dpXF0r0K0FdoLelH3QQ8QtumXlAABUsXamTIYVk55EO68XQ4PBKHuy1jUsh2tJmxWaTCWR3PRLYIhEz6cbH52u50dHkxnYwnl+eji+l4SuOLUXE+KQjULh+4TZneaKGtMPJj4/X/5+72xX5OHlKCch0ncE2cpa4CjwFrYgoyYS0YaXvkEhRYrJOx0r3eaDjmEHyW6idD1H9KdzhFHBrq5gpq4tJpyGFFnOS5hBwGIhIH7VarE1IKLztTTahkDXpz6qLxFDTFdXZ1d5M9JBCIjrFLdzCkBwt3p0gQoEBUtlyjsx9p4FzkGtOc9QkcxPX5GDO98cBXaKwQJLtt/2mzlF8EBXkf5FxB6SJLq20XGOlvqLpOys8NhQ3ks7mCFwwGF+J81oI2UZ415EusIp24eD/k8O2+D/x7tt+fT032RbQbyQCrRt5AwZo2+z3v5p2CklBTSEa2zauiIM8HsJM/y4eNvv75B7ruH3ICmUc=
+sidebar_class_name: "get api-method"
+info_path: docs/api/superdesk-core/superdesk-rundowns-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Show"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/shows/{showId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Show
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"showId","description":"Show Id","schema":{"type":"string"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","required":["title"],"properties":{"title":{"type":"string","example":"Marker"},"description":{"type":"string","example":"Morning show"},"planned_duration":{"type":"number","format":"float","example":3600,"description":"Planned show duration in seconds."},"created_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"last_updated_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownShow"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

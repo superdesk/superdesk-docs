@@ -1,0 +1,71 @@
+---
+id: create-rundown
+title: "Create Rundown"
+description: "Create Rundown"
+sidebar_label: "Create Rundown"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVsFS2zAQ/RXPnkXjOiEF32inBw4tDNCTJ8Mo1hILbElIMiHj8b93VrYTh9DMlDM5OIm8+7Ta956kBjxfOUgzuKmV0GvlYMHA4nONzn/XYgNpE/5KiwJSb2tkINDlVhovtYIUfuM66pOBQa6VR+UpjRtTypxT2OTRUWwDLi+w4vTLbwxCCnr5iLmHt6A9YLSWvoikx8oBG9WRgSv0Ghhwab2s8F5wj1S5sdqg9RJdmEP6EkeTOW+lWgEDfOWVoVfwi9sntNFkEsXzNI6hZSBqy7sytomqrpZox4nTeRy3DEzJlUJx/z85Q830eK+4B20r7iGFEDAudlvi3rKPQYSAMUQSJ8lJPD9JAk7o4tH+zJPzs/lsOjv/lpzNp3OcniX5t1lOoH134SpQeCkI0GNlyn8U9WHQjv8dIreWb2A0vs/6vRSH09NiPbf+I10/TWen0Lbtrrpenpceqxt8cPDOO0poSbPOaOW6ypL4K33tS/2HRe5RfHrn0zuf3hl5p32r684oo7OmQl9oASkY7cgGhvsCUpjY4Shj4NC+oKUDroHalvSWG3lgmdvaoBXonqKL68voNiRBu2BA3rvZnYY/h4Vt/XFggrEHSLTv6bwb39cyDOn7+hyLbtDcUQ1sRXQsqmc/6wnfMTnmeSBvQTJSD3q86l3DhnsDdQ4YULe7niZfTkk5xE3Fg7kVD7AHPO5xsVWXx1c/MSWXimACeU1PcQZ2dFspiP00g6ZZcod/bNm2NPxco91Ami0YvHAr+ZIKz2gxBXKBNiz/CTdUUbfxntzRzBRe1sErbzfhlg0ZF3mOxh+NXYwEen11ewcMlv2FqtKCciynbZieKQADHToQbBjGGii5WtV8RbEdJn3+AqXCLpM=
+sidebar_class_name: "post api-method"
+info_path: docs/api/superdesk-core/superdesk-rundowns-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create Rundown"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/rundowns"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create Rundown
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"description":"New Rundown","content":{"application/json":{"schema":{"type":"object","description":"Rundown with items","required":["show","airtime_date"],"properties":{"title":{"type":"string","example":"Marker // 06:00"},"duration":{"type":"number","example":3600},"planned_duration":{"type":"number","example":3600},"airtime_time":{"type":"string","format":"time","example":"06:00"},"airtime_date":{"type":"string","format":"date","example":"2022-06-20"},"show":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"template":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"items":{"type":"array","items":{"properties":{"_id":{"type":"string"},"start_time":{"type":"string","format":"time","example":"05:45"}}},"title":"RundownItemRefs"}},"title":"Rundown"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Created","content":{"application/json":{"schema":{"type":"object","description":"Rundown with items","required":["show","airtime_date"],"properties":{"title":{"type":"string","example":"Marker // 06:00"},"duration":{"type":"number","example":3600},"planned_duration":{"type":"number","example":3600},"airtime_time":{"type":"string","format":"time","example":"06:00"},"airtime_date":{"type":"string","format":"date","example":"2022-06-20"},"show":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"template":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"items":{"type":"array","items":{"properties":{"_id":{"type":"string"},"start_time":{"type":"string","format":"time","example":"05:45"}}},"title":"RundownItemRefs"}},"title":"Rundown"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

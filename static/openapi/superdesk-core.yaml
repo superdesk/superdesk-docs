@@ -4,6 +4,10 @@ info:
   title: Superdesk Rundowns API
   version: "2.5"
 
+servers:
+  - url: /api
+    description: Superdesk API Server
+
 paths:
   /shows:
     get:

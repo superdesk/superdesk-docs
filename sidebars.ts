@@ -1,4 +1,5 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import superdeskCoreSidebar from './docs/api/superdesk-core/sidebar';
 
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
@@ -49,7 +50,18 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'API Reference',
-      items: ['api/index'],
+      items: [
+        'api/index',
+        {
+          type: 'category',
+          label: 'Superdesk Core',
+          link: {
+            type: 'doc',
+            id: 'api/superdesk-core/superdesk-rundowns-api',
+          },
+          items: superdeskCoreSidebar,
+        },
+      ],
     },
     {
       type: 'category',

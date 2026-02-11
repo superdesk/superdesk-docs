@@ -1,0 +1,71 @@
+---
+id: update-show
+title: "Update Show"
+description: "Update Show"
+sidebar_label: "Update Show"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1v2zAM/SsGTxugNUHSpalvXTFgxTC06McpCArGYmK1tqRKctvA8H8fKDt1PtrushwcmxLfeyIfVUPAlYd0BteVluZFe5gLcPRUkQ8/jFxDWsdP5UhCGlxFAjKjA+nAS2htoTIMyujBgzeaYz7LqUR+C2tLkIJZPFAWQGwBzSCoUBCTWWcsuaDIx5QY7nN9cEqvQAC9Yml5Cf6geyQHjQBJPnPKMvs/UozTSq8Sn5sXTrQFak3yXlYO97J1VS7IgYClcSUGSGFZGAzbcOPJcLhHDlctYmRINrCJ0omnzGjpj5g2c4SB5P1i/bncyeh0OjkeH5+ejKaT8YTG01F2cpwRiE194DLW9EIybIE+3FdW/n/spg92/riJFWx4xZG3Rvu2b6PhkP92i3L5O0LsBu+i0CQCCbDosKRAjk1Yg+IdFkMOAjSW8Qy5ebmQsA/D+UmMH/itO3Uj9pzbzAWUFHIjW5IsjwJCDikMmMYP6patYVhyzxtZlSt4D1p1qKOy5CT5x+Ts6iK5iUnATDwO1/0g/dx04M3jGyPvI+6Y9T2vtv7bNtNnXT1wx8ebGwFKL822xv54mwuCzwkCuDat3tHR9zhTxocS4yh1ndvt9PvDGug1DGyBSjNGrHPd9WQWW+9BQNp5YC4gNz7wUl0v0NOdK5qGw08VuTWks7mAZ3QKFyx+VoNUnt8lpEssPB2oeLvK4Mt155WvSW+td0V2QdRrLgMWFX+BgEda93Zt5o2AnFCSi0LaxfOW7tstQ/TJB7fojlOvzm7Pf4GARXcdl0ZykkOuKj8ju4lnirMYYzUUqFcVrnhvC8q/v8uy+6o=
+sidebar_class_name: "patch api-method"
+info_path: docs/api/superdesk-core/superdesk-rundowns-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update Show"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/shows/{showId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update Show
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"showId","description":"Show Id","schema":{"type":"string"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["title"],"properties":{"title":{"type":"string","example":"Marker"},"description":{"type":"string","example":"Morning show"},"planned_duration":{"type":"number","format":"float","example":3600,"description":"Planned show duration in seconds."},"created_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"last_updated_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownShow"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK"}}}
+>
+  
+</StatusCodes>
+
+
+      

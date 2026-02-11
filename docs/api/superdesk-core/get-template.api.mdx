@@ -1,0 +1,71 @@
+---
+id: get-template
+title: "Get Template"
+description: "Get Template"
+sidebar_label: "Get Template"
+hide_title: true
+hide_table_of_contents: true
+api: eJytV21P20gQ/ivWSEhX3UIch0uppX5AKupFLaUCThVCUbTxjpMt9q7ZXQNR5P9+mrWdOC+lFPEFzHrmeWaeeVmzBMdnFuJbuCyV0I/KwpiBQVtoZdFCvIQoDOmXQJsYWTipFcRw8QUYJFo5VI7e8qLIZMLpbe+nJZMl2GSOOacntygQYtDTn5g4IPz7UhoUxOuky5BIC6MLNE7WrPXx2tc6I9UMGOATzwt6Befc3KEJPnGZLaBiwKVxMscJ/djnmWqTcwcxeIMuUjiMw7ALIbh7HsIbdCGiMIoOw+FhFAHb0urHHFUgbeDmGKTSWBfYuX4MSB5RZiiOiLnIuFIoJqI0vPZbsasyn6LpsqeZ5q5LPxiG4Tbt9xqxJmthA6kCi4lWwnpagwVy1yGbap0hV11wZ0rcBr/Ws1mGAS+dDhKDNbZWPZ2mHrdN7nfVTw3e7xbfn+6rvSpz8vp0Ovp6Awx+nJ198Q/nF9+u//VPN2enl19vYFwxkMqheeDZPikFprzMHMT9ikGulZt3rLgxfAEMpMPcds4JcIaG8luJc9tn/Wjcggi+eD3OIGSH/fG20qXFQOGMO/mAQR2/DUh1XSoXpEbnvrFQCcJ7RLz74yA2CcPg48fg/KLbAbch67OIDdjxuKpYO5tw1Ra5U3Ax2ejd/ZPTDOCvx0ThkwtMvZHWg0JpT7Hut2ZsfCgTh3mRbY7s3m4rDKbyabffmvMXbBufKhbccKfN8w69nteWO5y0yT9nfiCODvKjgxuoSOLtav2qiqs0N7Wsl3lA1lsSNKI2UBMP85rlO1LOaKi6MDv21cYVsfPuuVW3IuoPwhdux7VLRC609iYFN/u5uRCSgHg2Udqh3WvUavWsEMPow8nweHD84X10MhwMcXASJe+PE+rvdk4ufJFGArrD09y3IyoRnU+atn7p8GxfPdFhf3jdH8SDQXwc/h2G9YU2KQvx9qhNqJPp4g21YZBx69qA3xZ7V/frdmVUlR+4zfn5jC5YWTCgec/RoaEvpSVIMim4mwMDxXMf4Fw/jsTOHF7R3evPdz6GOm22Gk+6aSu2l6BdcXtI2kD/lGjMIEc31wJimKHzedI9CD3KxvaWdVJVr+W2veU6jIq40Dy0opQmI1deyF0VygKNQHsXnH4fBVfeCYheqlR39k3HsP0aJQ9gQCw1VnT0j/9c0tbl3I9mI9BWyTYiWGnh8Mn1ioxLRSA+5GWT9a2voQUG8aqYq8TptFOBMYO5to6clsspt/ifyaqKju9LNAuIb8cMHriRfOqvzyUIaelZQJzyzG5/Ti3XexL+umyq9C5Yd8/e8NurQdHF8MCzkv4CBne4WHcktdOryDe76hUBdPSq6ANpjlyg8WrUBqdJgoXruO78E7HRop/PrqGq/gfvlDyg
+sidebar_class_name: "get api-method"
+info_path: docs/api/superdesk-core/superdesk-rundowns-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Template"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/shows/{showId}/templates/{templateId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Template
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"showId","description":"Show Id","schema":{"type":"string"},"required":true},{"in":"path","name":"templateId","description":"Template Id","schema":{"type":"string"},"required":true}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","required":["title"],"properties":{"title":{"type":"string","example":"Marker Daily"},"airtime_time":{"type":"string","format":"time","example":"06:00"},"airtime_date":{"type":"string","format":"date","example":"2022-06-22","description":"When is the first show scheduled."},"planned_duration":{"type":"number","format":"float","example":3600,"description":"Planned show duration in seconds."},"repeat":{"type":"boolean","example":true,"description":"Toggle auto creation on/off."},"schedule":{"type":"object","required":["freq"],"properties":{"freq":{"type":"string","enum":["DAILY","WEEKLY","MONTHLY","YEARLY"]},"interval":{"type":"number","default":1},"month":{"type":"array","items":{"type":"integer"},"example":[1,12]},"monthday":{"type":"array","items":{"type":"integer"},"example":[1,30,-1],"description":"use negative numbers to count from the end"},"weekday":{"type":"array","items":{"type":"integer"},"description":"0 == MO","example":[0,1,2,3,4]}},"title":"Schedule"},"scheduled_on":{"type":"string","format":"datetime","description":"When is the next rundown scheduled to be created."},"title_template":{"type":"object","required":["prefix"],"properties":{"prefix":{"type":"string","example":"Marker"},"separator":{"type":"string","example":"//"},"date_format":{"type":"string","example":"%d.%m.%Y"}}},"items":{"type":"array","items":{"type":"object","description":"Rundow item","required":["rundown","item_type"],"properties":{"title":{"type":"string","example":"Intro"},"item_type":{"type":"string"},"content":{"type":"string"},"duration":{"type":"number","example":130},"planned_duration":{"type":"number","example":120},"show_part":{"type":"string"},"additional_notes":{"type":"string"},"rundown":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownItem"}},"_created":{"type":"string","format":"datetime","example":"2022-02-16T13:33:40+0000"},"_updated":{"type":"string","format":"datetime","example":"2022-02-16T13:33:40+0000"},"created_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"},"last_updated_by":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownTemplate"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
