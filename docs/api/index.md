@@ -10,34 +10,18 @@ Welcome to the Superdesk API Reference documentation. This section provides comp
 
 Superdesk provides RESTful APIs for all its components. The APIs follow standard REST principles with JSON payloads and use HTTP methods (GET, POST, PATCH, DELETE) for CRUD operations.
 
-## Documentation Formats
+## API Documentation
 
-We provide the API documentation in two formats:
+View the complete API documentation using our interactive API Explorer:
 
-### 1. **Direct OpenAPI Rendering** (Recommended)
+**[Superdesk Core API (Rundowns) - API Explorer →](/api/superdesk-core-direct/)**
 
-View the complete API documentation on a single page using Redoc:
-
-- **[Superdesk Core API (Rundowns)](/api/superdesk-core-direct/)** - Single-page view with all endpoints
-
-**Benefits:**
-- ✅ No generated files - renders directly from OpenAPI spec
-- ✅ All endpoints on one page with smooth scrolling navigation
-- ✅ Clean, modern Redoc interface
-- ✅ Automatic updates when spec changes
-- ✅ Faster to navigate with left sidebar menu
-
-### 2. Individual Endpoint Pages
-
-Browse API endpoints as separate documentation pages:
-
-- **[Superdesk Core API](/docs/api/superdesk-core/superdesk-rundowns-api)** - Individual pages per endpoint
-
-**Benefits:**
-- ✅ Integrated with Docusaurus navigation
-- ✅ Interactive request builder
-- ✅ Code examples in 20+ languages
-- ✅ Deep linking to specific endpoints
+The API Explorer provides:
+- ✅ **Single-page view** - All endpoints on one scrollable page
+- ✅ **Interactive navigation** - Left sidebar menu with endpoint list
+- ✅ **Direct rendering** - No generated files, updates immediately when spec changes
+- ✅ **Clean interface** - Professional Redoc design integrated with Docusaurus
+- ✅ **Try it out** - Test API endpoints directly from the documentation
 
 ## Available APIs
 

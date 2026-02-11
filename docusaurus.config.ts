@@ -36,7 +36,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/superdesk/superdesk-docs/tree/master/',
-          docItemComponent: '@theme/ApiItem',
         },
         blog: false,
         theme: {
@@ -63,34 +62,6 @@ const config: Config = {
       },
     ],
   ],
-
-  plugins: [
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        id: 'openapi',
-        docsPluginId: 'classic',
-        config: {
-          superdeskCore: {
-            specPath: 'static/openapi/superdesk-core.yaml',
-            outputDir: 'docs/api/superdesk-core',
-            sidebarOptions: {
-              groupPathsBy: 'tag',
-            },
-          },
-          superdeskPlanning: {
-            specPath: 'static/openapi/superdesk-planning.yaml',
-            outputDir: 'docs/api/superdesk-planning',
-            sidebarOptions: {
-              groupPathsBy: 'tag',
-            },
-          },
-        },
-      },
-    ],
-  ],
-
-  themes: ['docusaurus-theme-openapi-docs'],
 
   themeConfig: {
     image: 'img/superdesk-social-card.jpg',

@@ -1,12 +1,12 @@
-# API Documentation Approaches
+# API Documentation with Redocusaurus
 
-This directory contains API documentation generated from OpenAPI specifications. We support two approaches:
+This directory contains API documentation rendered directly from OpenAPI specifications using [Redocusaurus](https://github.com/rohit-gohri/redocusaurus).
 
-## Approach 1: Direct OpenAPI Rendering (Redocusaurus)
+## Direct OpenAPI Rendering
 
 **Location:** `/api/superdesk-core-direct/`
 
-Uses [Redocusaurus](https://github.com/rohit-gohri/redocusaurus) to render OpenAPI specs directly without generating files.
+Redocusaurus renders OpenAPI specs directly without generating files, providing a clean single-page API documentation experience.
 
 ### Configuration
 
@@ -37,98 +37,22 @@ presets: [
 - ✅ **Clean navigation** - Left sidebar with endpoint menu
 - ✅ **Automatic updates** - Changes to spec reflect immediately
 - ✅ **Smaller repository** - No generated MDX files to commit
+- ✅ **Easier maintenance** - Just edit the YAML file
 
-### When to Use
+### Features
 
-- For complete API overviews
-- When you want users to browse all endpoints easily
-- When maintaining generated files is burdensome
-- For external API consumers who want a comprehensive view
-
-## Approach 2: Generated Endpoint Pages (docusaurus-plugin-openapi-docs)
-
-**Location:** `/docs/api/superdesk-core/`
-
-Uses [docusaurus-plugin-openapi-docs](https://github.com/PaloAltoNetworks/docusaurus-openapi-docs) to generate individual MDX pages per endpoint.
-
-### Configuration
-
-```typescript
-// docusaurus.config.ts
-plugins: [
-  [
-    'docusaurus-plugin-openapi-docs',
-    {
-      config: {
-        superdeskCore: {
-          specPath: 'static/openapi/superdesk-core.yaml',
-          outputDir: 'docs/api/superdesk-core',
-          sidebarOptions: {
-            groupPathsBy: 'tag',
-          },
-        },
-      },
-    },
-  ],
-],
-themes: ['docusaurus-theme-openapi-docs'],
-```
-
-### Generation Command
-
-```bash
-npm run gen-api-docs
-```
-
-### Advantages
-
-- ✅ **Deep integration** - Full Docusaurus features (breadcrumbs, next/prev, etc.)
-- ✅ **SEO friendly** - Individual pages per endpoint
-- ✅ **Code samples** - 20+ language examples
-- ✅ **Interactive** - Try-it-out request builder
-- ✅ **Customizable** - Full MDX editing capability
-
-### When to Use
-
-- When you need deep Docusaurus integration
-- For SEO optimization (one page per endpoint)
-- When you want customizable per-endpoint documentation
-- For interactive API exploration with request builder
-
-## Comparison
-
-| Feature | Redocusaurus | Generated Pages |
-|---------|-------------|-----------------|
-| File Generation | ❌ None | ✅ 50+ MDX files |
-| Navigation Style | Left sidebar menu | Docusaurus sidebar tree |
-| Page Count | 1 page total | 1 page per endpoint |
-| Code Samples | ✅ Yes | ✅ Yes (20+ langs) |
-| Try-it-out | ✅ Basic | ✅ Full interactive |
-| Customization | Theme config | Full MDX editing |
-| Repository Size | Smaller | Larger |
-| Update Process | Edit YAML only | Edit YAML + regenerate |
-| SEO | Single page | Multiple pages |
-| Loading Speed | Fast (single page) | Fast (per page) |
-
-## Recommendation
-
-For most users, we recommend **starting with Redocusaurus** (direct rendering) because:
-
-1. It's simpler to maintain (no file generation)
-2. All endpoints are visible in one place
-3. Updates are immediate (just edit the YAML)
-4. Cleaner repository (no generated files)
-
-Use the **generated pages** approach when you need:
-- Individual SEO-optimized pages per endpoint
-- Deep customization of specific endpoint docs
-- Full interactive request builder functionality
+- **Interactive API Explorer** - Test endpoints directly from the documentation
+- **Code examples** - Auto-generated examples in multiple languages
+- **Dark mode support** - Integrated with Docusaurus theming
+- **Search functionality** - Quickly find endpoints
+- **Responsive design** - Works on all devices
 
 ## Adding New APIs
 
-### For Redocusaurus
+To add additional API specifications:
 
-Add a new spec to the `redocusaurus` preset in `docusaurus.config.ts`:
+1. Place the OpenAPI spec in `static/openapi/` directory
+2. Add configuration to the `redocusaurus` preset in `docusaurus.config.ts`:
 
 ```typescript
 specs: [
@@ -143,8 +67,50 @@ specs: [
 ],
 ```
 
-### For Generated Pages
+3. Rebuild the site - no file generation needed!
 
-1. Add configuration in `docusaurus.config.ts`
-2. Run `npm run gen-api-docs`
-3. Commit the generated files
+## Customization
+
+Theme options can be configured in the Redocusaurus preset:
+
+```typescript
+theme: {
+  primaryColor: '#1eb06c',  // Superdesk brand color
+  options: {
+    disableSearch: false,
+    hideDownloadButton: false,
+    hideHostname: false,
+    expandResponses: '200,201',
+    // More options available - see Redoc documentation
+  },
+},
+```
+
+## OpenAPI Specification Files
+
+All OpenAPI specs should be placed in the `static/openapi/` directory:
+
+- `static/openapi/superdesk-core.yaml` - Superdesk Core API (Rundowns)
+- `static/openapi/superdesk-planning.yaml` - Superdesk Planning API (future)
+
+These files are the single source of truth for API documentation.
+
+## Benefits Over Generated Files
+
+Traditional approaches (like `docusaurus-plugin-openapi-docs`) generate 50+ MDX files per API:
+- One file per endpoint
+- JSON files for schemas, parameters, responses
+- Sidebar configuration files
+
+**With Redocusaurus:**
+- Zero generated files
+- One YAML file per API
+- Instant updates without regeneration
+- Cleaner git history
+- Smaller repository size
+
+## Resources
+
+- [Redocusaurus Documentation](https://redocusaurus.vercel.app/docs)
+- [Redoc Documentation](https://redocly.com/docs/redoc/)
+- [OpenAPI Specification](https://swagger.io/specification/)

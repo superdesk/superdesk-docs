@@ -1,1 +1,0 @@
-{"parameters":[{"in":"path","name":"showId","description":"Show Id","schema":{"type":"string"},"required":true},{"in":"path","name":"templateId","description":"Template Id","schema":{"type":"string"},"required":true}]}
