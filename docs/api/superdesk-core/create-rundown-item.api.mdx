@@ -5,7 +5,7 @@ description: "Create Rundown Item"
 sidebar_label: "Create Rundown Item"
 hide_title: true
 hide_table_of_contents: true
-api: eJztlUtz2jAUhf8Kc9ZqAyYliXdppws2TSZJV4yHEdYtOLElRZJDGI//e+faBvNIMtm3bADdh67OdyxXCHLpEc9wV2pl1tojEXD0XJIP343aIK6av5kjhTi4kgQU+dRlNmRGI8YvWg+64sE0UAGB1OhAOnCttDbPUsm5Z4+eCyr4dEWF5F9hYwkxzOKR0oDjzm3XQdY27aeYwbX7QYCD86ZNImCdseRCRr5pnoWc9nbxwWV6CQF6lYXlEKY6OIN6v81Jfn1wnpOYKp1s590FdVksyO1vNBoPawGbS61JzT9XEnGJX5n13Er39t5SqYwbyXyuTehOfZy01epDISbR1eXkfHx+dRFdTsYTGl9G6cV5ShBbGXHTQJoq1HW/2IFvuNc1Rxx5a7Rvh4mGI/46xPrDkQyk/vvkH/ZJfcywNcXxRVJQWBmFGNZ45m5lWCHGWTfrnHF4CHhyL+T4HqtQupxTpM1OjHJfWnKK/NPg+nY6uG+KUCcC7Li7/tL7uT3vzhydAw4M0Ouz494v9exG4+FbSEfR8ABbX3pKq4/tIL1Pgl2q/5j94ftzb295FgACLForTfT1G1eyzoVsTKBlQe+COdB1Z5hAr+HM5jLT3KsBUXXMds9ixywRWDHTeIaqWkhPv11e17z8XJLbIJ4lAi/SZXLBR5gltcCKpCLXQH6iDc/W6v7lgbfn9LzkMU7uklpsK67TlGz4MDfZs93tzf0DBBbdi7AwimucXDMKuUYMCJhGhuahatYq5FIvS7nk3LYnf/4Cpj2G8A==
+api: eJztlUtz2jAUhf8Kc9ZqAyYliXdppws2TSZJV4yHEdYtOLElRZJDGI//e+faBvNIMtm3bADdh67OdyxXCHLpEc9wV2pl1tojEXD0XJIP343aIK6av5kjhTi4kgQU+dRlNmRGI8YvWg+64sE0UAGB1OhAOnCttDbPUsm5Z4+eCyr4dEWF5F9hYwkxzOKR0oDjztuuWdu1H2MG14YgwMF50ycRsM5YciEj33TPQk572/jgMr2EAL3KwnIIUx2cQb3f5iS/PjjQSUyVTrYD74K6LBbk9jcajYe1gM2l1qTmnyuJuMSvzHpupXt7b6lUxo1kPtcmdKc+Ttpq9aEQk+jqcnI+Pr+6iC4n4wmNL6P04jwliK2MuGkoTRXqul/sGDXg65ojjrw12rfDRMMRfx1y/eFIBlL/jfIvG6U+hti64vgqKSisjEIMazyDtzKsEOOsm3XOODwEPLkXcnyTVShdzinSZidOuS8tOUX+aXB9Ox3cN0WoEwG23F1/7f3cnndnjs4BBwbo9dlx75d6dqPx8C2ko2h4gK0vPaXVx3aQ3ifBLtV/zP7w/bm39zwLAAEWrZUm+vqNK1nnQjYm0LKgd8Ec6LozTKDXcGZzmWnu1YCoOma7Z7FjlgismGk8Q1UtpKffLq9rXn4uyW0QzxKBF+kyueAjzJJaYEVSkWsgP9GGZ2t1//LA23N6XvIYJ5dJLbYV12lKNnyYm+zZ7vbm/gECi+5VWBjFNU6uGYVcIwYETCND81A1axVyqZelXHJu25M/fwG+ZYfM
 sidebar_class_name: "post api-method"
 info_path: docs/api/superdesk-core/superdesk-rundowns-api
 custom_edit_url: null
@@ -54,7 +54,7 @@ Create Rundown Item
 
 <RequestSchema
   title={"Body"}
-  body={{"required":true,"description":"New Rundown Item","content":{"application/json":{"schema":{"type":"object","description":"Rundow item","required":["rundown","item_type"],"properties":{"title":{"type":"string","example":"Intro"},"item_type":{"type":"string"},"content":{"type":"string"},"duration":{"type":"number","example":130},"planned_duration":{"type":"number","example":120},"show_part":{"type":"string"},"additional_notes":{"type":"string"},"rundown":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownItem"}}}}}
+  body={{"required":true,"description":"New Rundown Item","content":{"application/json":{"schema":{"type":"object","description":"Rundown item","required":["rundown","item_type"],"properties":{"title":{"type":"string","example":"Intro"},"item_type":{"type":"string"},"content":{"type":"string"},"duration":{"type":"number","example":130},"planned_duration":{"type":"number","example":120},"show_part":{"type":"string"},"additional_notes":{"type":"string"},"rundown":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownItem"}}}}}
 >
   
 </RequestSchema>
@@ -62,7 +62,7 @@ Create Rundown Item
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"201":{"description":"Created","content":{"application/json":{"schema":{"type":"object","description":"Rundow item","required":["rundown","item_type"],"properties":{"title":{"type":"string","example":"Intro"},"item_type":{"type":"string"},"content":{"type":"string"},"duration":{"type":"number","example":130},"planned_duration":{"type":"number","example":120},"show_part":{"type":"string"},"additional_notes":{"type":"string"},"rundown":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownItem"}}}}}}
+  responses={{"201":{"description":"Created","content":{"application/json":{"schema":{"type":"object","description":"Rundown item","required":["rundown","item_type"],"properties":{"title":{"type":"string","example":"Intro"},"item_type":{"type":"string"},"content":{"type":"string"},"duration":{"type":"number","example":130},"planned_duration":{"type":"number","example":120},"show_part":{"type":"string"},"additional_notes":{"type":"string"},"rundown":{"type":"string","example":"629864349728636e382c74ce","title":"ObjectId"}},"title":"RundownItem"}}}}}}
 >
   
 </StatusCodes>

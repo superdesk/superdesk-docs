@@ -388,7 +388,7 @@ components:
           
     RundownItem:
       type: object
-      description: "Rundow item"
+      description: "Rundown item"
       required:
         - rundown
         - item_type
