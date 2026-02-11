@@ -1,0 +1,484 @@
+openapi: '3.0.2'
+
+info:
+  title: Superdesk Rundowns API
+  version: "2.5"
+
+servers:
+  - url: /api
+    description: Superdesk API Server
+
+paths:
+  /shows:
+    get:
+      summary: List Shows
+      tags:
+        - Rundowns
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                properties:
+                  _items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/RundownShow'
+    post:
+      summary: Create Show
+      tags:
+        - Rundowns
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RundownShow'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RundownShow'
+
+  /shows/{showId}:
+    parameters:
+      - $ref: '#/components/parameters/showId'
+
+    get:
+      summary: Get Show
+      tags:
+        - Rundowns
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RundownShow'
+
+    patch:
+      summary: Update Show
+      tags:
+       - Rundowns
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RundownShow'
+      responses:
+        '200':
+          description: OK
+    
+    delete:
+      summary: Delete Show
+      tags:
+        - Rundowns
+      responses:
+        '204':
+          description: No content
+  
+  /shows/{showId}/templates:
+    parameters:
+      - $ref: '#/components/parameters/showId'
+
+    get:
+      summary: List Templates for the Show
+      tags:
+        - Rundowns
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                properties:
+                  _items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/RundownTemplate'
+    
+    post:
+      summary: Create new Template
+      tags:
+        - Rundowns
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RundownTemplate'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RundownTemplate'
+  
+  /shows/{showId}/templates/{templateId}:
+    parameters:
+      - $ref: '#/components/parameters/showId'
+      - $ref: '#/components/parameters/templateId'
+    
+    get:
+      summary: Get Template
+      tags:
+        - Rundowns
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RundownTemplate'
+    
+    patch:
+      summary: Update Template
+      tags:
+        - Rundowns
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RundownTemplate'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RundownTemplate'
+
+    delete:
+      summary: Delete Template
+      tags:
+        - Rundowns
+      responses:
+        '204':
+          description: No content
+
+  /rundowns:
+    get:
+      summary: List Rundowns
+      tags:
+        - Rundowns
+      responses:
+        '200':
+          description: Get list
+          content:
+            application/json:
+              schema:
+                properties:
+                  _items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Rundown'
+    post:
+      summary: Create Rundown
+      tags:
+        - Rundowns
+      requestBody:
+        required: true
+        $ref: '#/components/requestBodies/Rundown'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Rundown'
+
+  /rundown_items:
+    get:
+      summary: List Rundown Items
+      tags:
+        - Rundowns
+      responses:
+        '200':
+          description: 'Get list'
+          content:
+            application/json:
+              schema:
+                properties:
+                  _items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/RundownItem'
+    post:
+      summary: Create Rundown Item
+      tags:
+        - Rundowns
+      requestBody:
+        required: true
+        $ref: '#/components/requestBodies/RundownItem'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RundownItem'
+
+
+components:
+
+  parameters:
+
+    showId:
+      in: path
+      name: showId
+      description: Show Id
+      schema:
+        type: string
+      required: true
+
+    templateId:
+      in: path
+      name: templateId
+      description: Template Id
+      schema:
+        type: string
+      required: true
+
+  schemas:
+
+    ObjectId:
+      type: string
+      example: 629864349728636e382c74ce
+
+    RundownShow:
+      type: object
+
+      required:
+        - title
+
+      properties:
+        title:
+          type: string
+          example: Marker
+
+        description:
+          type: string
+          example: Morning show
+
+        planned_duration:
+          type: number
+          format: float
+          example: 3600.0
+          description: Planned show duration in seconds.
+
+        created_by:
+          $ref: '#/components/schemas/ObjectId'
+
+        last_updated_by:
+          $ref: '#/components/schemas/ObjectId'
+
+    RundownTemplate:
+      type: object
+
+      required: 
+        - title
+
+      properties:
+        title:
+          type: string
+          example: Marker Daily
+
+        airtime_time:
+          type: string
+          format: time
+          example: 06:00
+
+        airtime_date:
+          type: string
+          format: date
+          example: 2022-06-22
+          description: When is the first show scheduled.
+
+        planned_duration:
+          type: number
+          format: float
+          example: 3600.0
+          description: Planned show duration in seconds.
+        
+        repeat:
+          type: boolean
+          example: true
+          description: Toggle auto creation on/off.
+
+        schedule:
+          $ref: '#/components/schemas/Schedule'
+
+        scheduled_on:
+          type: string
+          format: datetime
+          description: When is the next rundown scheduled to be created.
+
+        title_template:
+          type: object
+          required:
+            - prefix
+          properties:
+            prefix:
+              type: string
+              example: "Marker"
+            separator:
+              type: string
+              example: "//"
+            date_format:
+              type: string
+              example: "%d.%m.%Y"
+
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/RundownItem'
+
+        _created:
+          type: string
+          format: datetime
+          example: 2022-02-16T13:33:40+0000
+
+        _updated:
+          type: string
+          format: datetime
+          example: 2022-02-16T13:33:40+0000
+
+        created_by:
+          $ref: '#/components/schemas/ObjectId'
+
+        last_updated_by:
+          $ref: '#/components/schemas/ObjectId'
+    
+    Rundown:
+      type: object
+      description: "Rundown with items"
+      required:
+        - "show"
+        - "airtime_date"
+      properties:
+        title:
+          type: string
+          example: Marker // 06:00
+        duration:
+          type: number
+          example: 3600
+        planned_duration:
+          type: number
+          example: 3600
+        airtime_time:
+          type: string
+          format: time
+          example: 06:00
+        airtime_date:
+          type: string
+          format: date
+          example: 2022-06-20
+        show:
+          $ref: '#/components/schemas/ObjectId'
+        template:
+          $ref: '#/components/schemas/ObjectId'
+        items: 
+          $ref: '#/components/schemas/RundownItemRefs'
+          
+    RundownItem:
+      type: object
+      description: "Rundown item"
+      required:
+        - rundown
+        - item_type
+      properties:
+        title:
+          type: string
+          example: Intro
+        item_type:
+          type: string
+        content:
+          type: string
+        duration:
+          type: number
+          example: 130
+        planned_duration:
+          type: number
+          example: 120
+        show_part:
+          type: string
+        additional_notes:
+          type: string
+        rundown:
+          $ref: '#/components/schemas/ObjectId'
+     
+    RundownItemRefs:
+      type: array
+      items:
+        properties:
+          _id:
+            type: string
+          start_time:
+            type: string
+            format: time
+            example: 05:45
+
+    Schedule:
+      type: object
+      required:
+        - freq
+      properties:
+        freq:
+          type: string
+          enum:
+            - DAILY
+            - WEEKLY
+            - MONTHLY
+            - YEARLY
+        interval:
+          type: number
+          default: 1
+        month:
+          type: array
+          items:
+            type: integer
+          example: [1, 12]
+        monthday:
+          type: array
+          items:
+            type: integer
+          example: [1, 30, -1]
+          description: use negative numbers to count from the end
+        weekday:
+          type: array
+          items:
+            type: integer
+          description: 0 == MO
+          example: [0, 1, 2, 3, 4]
+  
+  requestBodies:
+    Rundown:
+      description: New Rundown
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Rundown'
+
+    RundownItem:
+      description: New Rundown Item
+      required: true
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RundownItem'
+
+
+
+  responses:
+    '401':
+      description: Unauthorized
+
+    '412':
+      description: Conflict

@@ -43,35 +43,29 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-  ],
-
-  plugins: [
     [
-      'docusaurus-plugin-openapi-docs',
+      'redocusaurus',
       {
-        id: 'openapi',
-        docsPluginId: 'classic',
-        config: {
-          superdeskCore: {
-            specPath: 'static/openapi/superdesk-core.yaml',
-            outputDir: 'docs/api/superdesk-core',
-            sidebarOptions: {
-              groupPathsBy: 'tag',
-            },
+        specs: [
+          {
+            spec: 'static/openapi/superdesk-core.yaml',
+            route: '/api/superdesk-core-direct/',
           },
-          superdeskPlanning: {
-            specPath: 'static/openapi/superdesk-planning.yaml',
-            outputDir: 'docs/api/superdesk-planning',
-            sidebarOptions: {
-              groupPathsBy: 'tag',
-            },
+          {
+            spec: 'static/openapi/superdesk-production-api.yaml',
+            route: '/api/production-api/',
+          },
+        ],
+        theme: {
+          primaryColor: '#1eb06c',
+          options: {
+            disableSearch: false,
+            hideDownloadButton: false,
           },
         },
       },
     ],
   ],
-
-  themes: ['docusaurus-theme-openapi-docs'],
 
   themeConfig: {
     image: 'img/superdesk-social-card.jpg',
@@ -91,6 +85,11 @@ const config: Config = {
         {
           to: '/docs/api',
           label: 'API Reference',
+          position: 'left',
+        },
+        {
+          to: '/api/superdesk-core-direct/',
+          label: 'API Explorer',
           position: 'left',
         },
         {

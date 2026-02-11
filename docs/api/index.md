@@ -10,6 +10,28 @@ Welcome to the Superdesk API Reference documentation. This section provides comp
 
 Superdesk provides RESTful APIs for all its components. The APIs follow standard REST principles with JSON payloads and use HTTP methods (GET, POST, PATCH, DELETE) for CRUD operations.
 
+## API Documentation
+
+View the complete API documentation using our interactive API Explorer:
+
+### Core APIs
+
+**[Superdesk Core API (Rundowns) →](/api/superdesk-core-direct/)**
+- Rundown management for broadcast workflows
+- Shows, templates, and rundown items
+
+**[Superdesk Production API →](/api/production-api/)**
+- Stable, versioned endpoints for third-party integrations
+- Content items, assignments, planning, events, and more
+- JWT authentication for secure access
+
+The API Explorer provides:
+- ✅ **Single-page view** - All endpoints on one scrollable page
+- ✅ **Interactive navigation** - Left sidebar menu with endpoint list
+- ✅ **Direct rendering** - No generated files, updates immediately when spec changes
+- ✅ **Clean interface** - Professional Redoc design integrated with Docusaurus
+- ✅ **Try it out** - Test API endpoints directly from the documentation
+
 ## Available APIs
 
 ### Superdesk Core API
@@ -20,8 +42,6 @@ The Superdesk Core backend provides the main REST API for content management, wo
 
 **Authentication**: Session-based or token-based authentication
 
-**Documentation**: OpenAPI specification coming soon
-
 Key endpoints:
 - `/archive` - Content management
 - `/desks` - Desk management
@@ -29,13 +49,37 @@ Key endpoints:
 - `/publish` - Publishing operations
 - `/search` - Content search
 
+### Superdesk Production API
+
+Production API server provides **stable and versioned endpoints** for third-party apps to consume news content from Superdesk.
+
+**Base URL**: `https://your-superdesk-instance.com/prodapi/v1`
+
+**Authentication**: JWT token authentication (Bearer token)
+
+**Current Version**: v1
+
+Key features:
+- Uses the same DB and Elasticsearch index as main Superdesk app
+- Versioned endpoints for non-breaking API changes
+- HATEOAS links for resource relationships
+- Elasticsearch and MongoDB query support
+
+Key endpoints:
+- `/items` - Content items with search
+- `/assignments` - Assignment management
+- `/planning` - Planning items
+- `/events` - Calendar events
+- `/desks` - Editorial desks
+- `/users` - System users
+- `/contacts` - Contact information
+- `/assets` - Media assets
+
 ### Superdesk Planning API
 
 The Planning module extends the core API with event and planning management.
 
 **Base URL**: `https://your-superdesk-instance.com/api`
-
-**Documentation**: OpenAPI specification coming soon
 
 Key endpoints:
 - `/events` - Event management
@@ -45,20 +89,9 @@ Key endpoints:
 
 ## OpenAPI Specifications
 
-Full OpenAPI 3.0 specifications will be available here once they are generated from the source repositories.
-
-To generate API documentation:
-
-1. Place OpenAPI spec files in `static/openapi/`:
-   - `superdesk-core.yaml`
-   - `superdesk-planning.yaml`
-
-2. Run the OpenAPI docs generator:
-   ```bash
-   npm run docusaurus gen-api-docs all
-   ```
-
-3. The API documentation will be automatically generated and integrated into the documentation site.
+Full OpenAPI 3.0 specifications are available for:
+- **Superdesk Core API (Rundowns)** - `static/openapi/superdesk-core.yaml`
+- **Superdesk Production API** - `static/openapi/superdesk-production-api.yaml`
 
 ## API Authentication
 
@@ -76,7 +109,7 @@ curl -X POST https://your-instance.com/api/auth \
   }'
 ```
 
-### Token Authentication
+### Token Authentication (Core API)
 
 API token authentication for integrations:
 
@@ -84,6 +117,19 @@ API token authentication for integrations:
 # Use API token in header
 curl -X GET https://your-instance.com/api/archive \
   -H "Authorization: Bearer YOUR_API_TOKEN"
+```
+
+### JWT Authentication (Production API)
+
+Production API uses JWT token authentication. Third-party apps must retrieve token using AuthServer:
+
+```bash
+export PRODAPI=http://127.0.0.1:5500/prodapi/v1
+export JWT_TOKEN=your.jwt.token
+export FILTER='source={"query":{"filtered":{"filter":{"terms":{"type":["text"]}}}}}'
+
+curl -g -i $PRODAPI/items?$FILTER \
+  -H "Authorization: Bearer $JWT_TOKEN"
 ```
 
 ## Common Patterns
@@ -218,6 +264,22 @@ curl -X POST https://your-instance.com/api/publish \
   }'
 ```
 
+### Query Production API Items
+
+```bash
+# Get all packages
+curl -g "$PRODAPI/items?source={\"query\":{\"filtered\":{\"filter\":{\"terms\":{\"type\":[\"composite\"]}}}}}" \
+  -H "Authorization: Bearer $JWT_TOKEN"
+
+# Filter by desk
+curl -g "$PRODAPI/items?source={\"query\":{\"filtered\":{\"filter\":{\"terms\":{\"task.desk\":[\"5c489481405ecc015e5e10bc\"]}}}}}" \
+  -H "Authorization: Bearer $JWT_TOKEN"
+
+# Filter by assignment
+curl -g "$PRODAPI/items?source={\"query\":{\"bool\":{\"must\":{\"terms\":{\"assignment_id\":[\"60e403bc8361feb5664719b1\"]}}}}}" \
+  -H "Authorization: Bearer $JWT_TOKEN"
+```
+
 ## WebSocket API
 
 For real-time updates, Superdesk uses WebSockets:
@@ -243,3 +305,4 @@ ws.onmessage = (event) => {
 - [Eve Framework Documentation](https://docs.python-eve.org/) - Backend framework
 - [OpenAPI Specification](https://swagger.io/specification/) - API spec format
 - [REST API Best Practices](https://restfulapi.net/) - REST principles
+- [Production API Documentation](https://superdesk.readthedocs.io/en/latest/production_api.html) - Original documentation
