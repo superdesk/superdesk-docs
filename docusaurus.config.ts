@@ -93,11 +93,6 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/api/superdesk-core-direct/',
-          label: 'API Explorer',
-          position: 'left',
-        },
-        {
           href: 'https://github.com/superdesk',
           label: 'GitHub',
           position: 'right',
