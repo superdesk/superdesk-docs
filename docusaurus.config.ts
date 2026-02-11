@@ -83,6 +83,11 @@ const config: Config = {
           label: 'Documentation',
         },
         {
+          to: '/docs/user-guide',
+          label: 'User Guide',
+          position: 'left',
+        },
+        {
           to: '/docs/api',
           label: 'API Reference',
           position: 'left',

@@ -14,7 +14,59 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'User Guide',
-      items: ['user-guide/index'],
+      items: [
+        'user-guide/index',
+        'user-guide/foreword',
+        'user-guide/what-is-superdesk',
+        {
+          type: 'category',
+          label: 'Workspace & Navigation',
+          items: [
+            'user-guide/desks-and-custom-workspaces',
+            'user-guide/dashboards-and-widgets',
+            'user-guide/monitoring-tab',
+            'user-guide/searching-content-in-superdesk',
+            'user-guide/highlights',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Content Management',
+          items: [
+            'user-guide/creating-and-editing-content-items',
+            'user-guide/packages',
+            'user-guide/spiked-items',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Workflow Tools',
+          items: [
+            'user-guide/journalist-workflow-tools',
+            'user-guide/editor-workflow-tools',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Administration',
+          items: [
+            'user-guide/desk-creation-and-desk-management',
+            'user-guide/user-management-and-user-roles',
+            'user-guide/defining-publishing-in-superdesk',
+            'user-guide/content-configuration',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Integrations & Advanced',
+          items: [
+            'user-guide/superdesk-api',
+            'user-guide/ingesting-news-items-and-events',
+            'user-guide/superdesk-planning-component',
+          ],
+        },
+        'user-guide/superdesk---glossary-and-terminology-guide',
+      ],
     },
     {
       type: 'category',
