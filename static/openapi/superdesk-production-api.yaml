@@ -6,7 +6,7 @@ info:
   description: |
     Production API server provides stable and versioned endpoints for third-party apps to consume news content from Superdesk.
     
-    Production API uses the same DB and elastic search index as the main Superdesk app, unlike Content API which has a separate DB.
+    Production API uses the same DB and Elasticsearch index as the main Superdesk app, unlike Content API which has a separate DB.
     
     Production API uses versioned endpoints to provide stable, non-breaking changes API for third-party apps.
 
