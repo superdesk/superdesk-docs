@@ -29,7 +29,10 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Client',
-          items: ['developer-guide/client/index'],
+          items: [
+            'developer-guide/client/index',
+            'developer-guide/client/angular-performance-tips',
+          ],
         },
         {
           type: 'category',
