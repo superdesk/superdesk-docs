@@ -5,27 +5,29 @@
  */
 
 /* You can override the default Infima variables here. */
+/* Using official Superdesk brand color: rgb(30, 176, 108) = #1EB06C */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #1eb06c;
+  --ifm-color-primary-dark: #1a9a5e;
+  --ifm-color-primary-darker: #188d56;
+  --ifm-color-primary-darkest: #157b4b;
+  --ifm-color-primary-light: #20c176;
+  --ifm-color-primary-lighter: #22ca7c;
+  --ifm-color-primary-lightest: #26da86;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Using brighter Superdesk green for dark mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #3cdd92;
+  --ifm-color-primary-dark: #23ce7e;
+  --ifm-color-primary-darker: #21c579;
+  --ifm-color-primary-darkest: #1eb06c;
+  --ifm-color-primary-light: #52e19e;
+  --ifm-color-primary-lighter: #5fe3a6;
+  --ifm-color-primary-lightest: #70e6af;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
