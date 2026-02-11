@@ -49,7 +49,6 @@ function FeatureItem({icon, title, description}) {
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`Home`}
