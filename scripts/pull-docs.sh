@@ -18,13 +18,29 @@ download_file() {
     local repo=$1
     local file_path=$2
     local output_path=$3
-    local url="https://raw.githubusercontent.com/superdesk/${repo}/master/${file_path}"
-    
-    echo "Downloading ${file_path} from ${repo}..."
-    if curl -f -s -o "$output_path" "$url"; then
-        echo "✓ Downloaded ${file_path}"
+    local branch=${4:-}
+
+    local branches_to_try=()
+    if [ -n "$branch" ]; then
+        branches_to_try=("$branch")
     else
-        echo "✗ Failed to download ${file_path} (may not exist)"
+        branches_to_try=("main" "master")
+    fi
+
+    local success=0
+    for b in "${branches_to_try[@]}"; do
+        local url="https://raw.githubusercontent.com/superdesk/${repo}/${b}/${file_path}"
+
+        echo "Downloading ${file_path} from ${repo} (branch: ${b})..."
+        if curl -f -s -o "$output_path" "$url"; then
+            echo "✓ Downloaded ${file_path} from branch ${b}"
+            success=1
+            break
+        fi
+    done
+
+    if [ "$success" -ne 1 ]; then
+        echo "✗ Failed to download ${file_path} from ${repo} (no matching branch found)"
     fi
 }
 

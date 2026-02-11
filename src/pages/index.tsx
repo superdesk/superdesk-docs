@@ -24,7 +24,14 @@ function HomepageHeader() {
   );
 }
 
-function RepositoryCard({title, description, link, language}) {
+interface RepositoryCardProps {
+  title: string;
+  description: string;
+  link: string;
+  language: string;
+}
+
+function RepositoryCard({title, description, link, language}: RepositoryCardProps) {
   return (
     <div className="repo-card">
       <h3>
@@ -38,7 +45,13 @@ function RepositoryCard({title, description, link, language}) {
   );
 }
 
-function FeatureItem({icon, title, description}) {
+interface FeatureItemProps {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+function FeatureItem({icon, title, description}: FeatureItemProps) {
   return (
     <div className="feature-item">
       <div className={styles.featureIcon}>{icon}</div>

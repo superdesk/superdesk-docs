@@ -8,10 +8,11 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://docs.superdesk.org',
+  // Use environment variable or default to GitHub Pages URL
+  url: process.env.DOCUSAURUS_URL || 'https://superdesk.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: process.env.DOCUSAURUS_BASE_URL || '/superdesk-docs/',
 
   // GitHub pages deployment config.
   organizationName: 'superdesk',
