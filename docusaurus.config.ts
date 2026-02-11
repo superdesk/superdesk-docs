@@ -44,6 +44,24 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+    [
+      'redocusaurus',
+      {
+        specs: [
+          {
+            spec: 'static/openapi/superdesk-core.yaml',
+            route: '/api/superdesk-core-direct/',
+          },
+        ],
+        theme: {
+          primaryColor: '#1eb06c',
+          options: {
+            disableSearch: false,
+            hideDownloadButton: false,
+          },
+        },
+      },
+    ],
   ],
 
   plugins: [
@@ -92,6 +110,11 @@ const config: Config = {
         {
           to: '/docs/api',
           label: 'API Reference',
+          position: 'left',
+        },
+        {
+          to: '/api/superdesk-core-direct/',
+          label: 'API Explorer',
           position: 'left',
         },
         {

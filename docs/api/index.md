@@ -10,6 +10,35 @@ Welcome to the Superdesk API Reference documentation. This section provides comp
 
 Superdesk provides RESTful APIs for all its components. The APIs follow standard REST principles with JSON payloads and use HTTP methods (GET, POST, PATCH, DELETE) for CRUD operations.
 
+## Documentation Formats
+
+We provide the API documentation in two formats:
+
+### 1. **Direct OpenAPI Rendering** (Recommended)
+
+View the complete API documentation on a single page using Redoc:
+
+- **[Superdesk Core API (Rundowns)](/api/superdesk-core-direct/)** - Single-page view with all endpoints
+
+**Benefits:**
+- ✅ No generated files - renders directly from OpenAPI spec
+- ✅ All endpoints on one page with smooth scrolling navigation
+- ✅ Clean, modern Redoc interface
+- ✅ Automatic updates when spec changes
+- ✅ Faster to navigate with left sidebar menu
+
+### 2. Individual Endpoint Pages
+
+Browse API endpoints as separate documentation pages:
+
+- **[Superdesk Core API](/docs/api/superdesk-core/superdesk-rundowns-api)** - Individual pages per endpoint
+
+**Benefits:**
+- ✅ Integrated with Docusaurus navigation
+- ✅ Interactive request builder
+- ✅ Code examples in 20+ languages
+- ✅ Deep linking to specific endpoints
+
 ## Available APIs
 
 ### Superdesk Core API
@@ -19,8 +48,6 @@ The Superdesk Core backend provides the main REST API for content management, wo
 **Base URL**: `https://your-superdesk-instance.com/api`
 
 **Authentication**: Session-based or token-based authentication
-
-**Documentation**: OpenAPI specification coming soon
 
 Key endpoints:
 - `/archive` - Content management
@@ -35,8 +62,6 @@ The Planning module extends the core API with event and planning management.
 
 **Base URL**: `https://your-superdesk-instance.com/api`
 
-**Documentation**: OpenAPI specification coming soon
-
 Key endpoints:
 - `/events` - Event management
 - `/planning` - Planning items
@@ -45,9 +70,7 @@ Key endpoints:
 
 ## OpenAPI Specifications
 
-Full OpenAPI 3.0 specifications will be available here once they are generated from the source repositories.
-
-To generate API documentation:
+Full OpenAPI 3.0 specifications are available for:
 
 1. Place OpenAPI spec files in `static/openapi/`:
    - `superdesk-core.yaml`
