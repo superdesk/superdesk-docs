@@ -47,6 +47,7 @@ docker-compose exec backend python manage.py app:initialize_data
 docker-compose exec backend python manage.py users:create -u admin -p admin -e admin@example.com --admin
 ```
 
+> **Security note:** The `admin` / `admin` credentials shown above are for local testing only. For any non-local or production deployment, use a strong, unique password for the admin user and never keep default credentials. If you used these example credentials temporarily, change the admin password immediately after the first login.
 Access Superdesk at `http://localhost:9000` with the credentials you created.
 
 ### Development Installation
