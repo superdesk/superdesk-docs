@@ -74,6 +74,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'developer-guide/index',
         'developer-guide/architecture',
+        'developer-guide/contributing-workflow',
         {
           type: 'category',
           label: 'Core',
