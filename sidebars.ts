@@ -72,6 +72,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Developer Guide',
       items: [
+        'developer-guide/index',
         'developer-guide/architecture',
         {
           type: 'category',

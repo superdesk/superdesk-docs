@@ -77,14 +77,19 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs/getting-started/intro',
           position: 'left',
           label: 'Documentation',
+          activeBasePath: '/docs/getting-started',
         },
         {
           to: '/docs/user-guide',
           label: 'User Guide',
+          position: 'left',
+        },
+        {
+          to: '/docs/developer-guide',
+          label: 'Developer Guide',
           position: 'left',
         },
         {
@@ -93,7 +98,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/superdesk',
+          href: 'https://github.com/superdesk/superdesk',
           label: 'GitHub',
           position: 'right',
         },
@@ -115,7 +120,7 @@ const config: Config = {
             },
             {
               label: 'Developer Guide',
-              to: '/docs/developer-guide/architecture',
+              to: '/docs/developer-guide',
             },
           ],
         },
@@ -154,7 +159,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Superdesk. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sourcefabric. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
