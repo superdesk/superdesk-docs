@@ -51,6 +51,7 @@ From this Stages tab, you can make new Stages to a Desk by clicking the grey ‘
 You can edit the current Stages by hovering over the stage you wish to edit and clicking the pencil icon that appears to the right of the Stage name.
 
 The GLOBAL READ toggle allows items that are in this Stage to be read by all users. If GLOBAL READ is turned off, only users assigned to the Desk will be able to see content from that stage. If GLOBAL READ is turned on, the Stage will be available for use in any Monitoring view on any Desk. You can also use the LOCAL READ ONLY toggle to ensure that items in this Stage cannot be edited.
+
 ![](./images/image189.png)
 
 If the WORKING STAGE toggle is set to blue, it indicates that any news item or package created in this Desk will be sent to this Stage.

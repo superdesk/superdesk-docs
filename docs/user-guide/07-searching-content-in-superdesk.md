@@ -1,10 +1,12 @@
 # Searching Content in Superdesk
 
-### Searching Content in the Search Tab
+## Searching Content in the Search Tab
 
 Superdesk has a convenient built-in search function for finding news items. The Search function is also how you can view all the newly ingested articles, photos, videos and content packages. Each desk has a desk-specific search located in the monitoring pane. If you would like to search the entire content of Superdesk, click the Search tab located on the Workspace Panel.
 
-![](./images/image172.png) This is the Search icon on the Workspace Panel.
+![](./images/image172.png)
+
+This is the Search icon on the Workspace Panel.
 
 Clicking the Search icon in the Workspace Panel enables you to browse all the news items. You can browse all types of items using the Search feature. This includes published, killed, ingested or archived items.
 
@@ -16,12 +18,13 @@ You can perform a search by typing in keywords related to the article you’re l
 
 If you type multiple words, Superdesk will search for items containing all of those words simultaneously. In the example above, we are searching for an article that contains both ‘giraffes’ and ‘IWGP’.
 
-![](./images/image323.png) This is the Advanced Search icon.
+![](./images/image323.png)
+
+This is the Advanced Search icon.
 
 You can apply additional filters and parameters to your search by clicking on the Advanced Search icon. Inside the Advanced Search menu, you will find several ways to refine your search.
 
-You can define the Stage of the content item you’re looking for: ingested, production, published or archived. You can choose multiple selections for a single search. When the buttons turn white, articles in those states will not be included in your search. To search only for newly ingested articles, for example, leave only the *Ingest* button in blue.
-![](./images/image148.png)
+You can define the Stage of the content item you’re looking for: ingested, production, published or archived. You can choose multiple selections for a single search. When the buttons turn white, articles in those states will not be included in your search. To search only for newly ingested articles, for example, leave only the *Ingest* button in blue.![](./images/image148.png)
 
 Below the production stage buttons there are two tabs, one for parameters, and one for filters.
 
@@ -79,7 +82,7 @@ In the top-right section of the search results window, you have the option to re
 
 By default, the search results appear in a list view. You can switch to a grid-view by clicking on the grid icon in the top-right corner. The grid view is especially useful for viewing news items with images because it allows space for thumbnail views of the pictures.
 
-###   **Searching Content on your Desk**
+##   **Searching Content on your Desk**
 
 You can easily search content on your current Desk by using the search textbox at the top of the Monitoring Pane. This will search all content in that Desk’s workflow. If you type multiple words, Superdesk will search for items containing all of those words simultaneously.
 

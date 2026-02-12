@@ -11,7 +11,7 @@ The **Workflow** section contains settings pertaining to [user roles,](#user-rol
 The **Content Configuration** section contains settings pertaining to metadata fields for new item creation, highlight creation, templates and vocabularies. The content configuration section of the Settings menu is described below:
 ![](./images/image122.png)
 
-### Content Profiles
+## Content Profiles
 
 Content Profiles are used to define metadata for new item creation. Content Profiles determine which fields are available, and which fields are required when a news item is created.
 
@@ -40,13 +40,14 @@ You will see three tabs in the middle of the Edit Content Profile window: Header
 You can specify there is a mandatory field, by clicking on the ‘Required’ checkbox. For most text fields, you can also specify a minimum and maximum character length.
 Clicking the Create icon above or below each field allows you to add additional fields. Custom fields can be configured by selecting *Hamburger menu \> Settings \> Metadata*.
 
-### Dictionaries
+## Dictionaries
 
 The Dictionaries tab allows you to select which dictionary Superdesk will use for internal spell check. Superdesk allows admins and users to use multiple dictionaries for spell checking.
 
 If you prefer not to use the Superdesk-internal Spell Check described below, Superdesk can also be integrated with 3rd party tools such as [Tansa](https://www.tansa.com/).
 
 To configure a Superdesk-internal Spell Checker, select the *Hamburger menu \> Settings \> Dictionaries*, as shown below.
+
 ![](./images/image103.png)
 
 Clicking the Create icon in the top-right corner of the Dictionary Management pane will give you the option to add a global dictionary, a personal dictionary, or an abbreviations dictionary.
@@ -63,8 +64,7 @@ Don’t forget to set the dictionary to active using the toggle at the top of th
 
 It is possible to have multiple dictionaries with the same language code; for example, a medical dictionary, and a general one. When checking articles, Superdesk will use all of the active dictionaries that match the news item’s language code concurrently. (Note the toggle at the top of the dictionary configuration window can be used to temporarily disable a dictionary).
 
-You can view your news item’s current language code by using the *information button* in the Editor Sidebar when you are editing an article.
-![](./images/image241.png)
+You can view your news item’s current language code by using the *information button* in the Editor Sidebar when you are editing an article.![](./images/image241.png)
 
 #### Adding additional entries to a Dictionary
 
@@ -112,12 +112,12 @@ With the example above, when you are typing in the body text of any article if y
 
 You only need to click the Create icon the first time you’re adding a dictionary. Once the dictionary exists, you can edit your dictionaries from the Dictionary management section by clicking on the pencil-shaped icon beside the dictionary you wish to edit. Editing an abbreviations dictionary in this manner also lets you add more items to it.
 
-### Highlights
+## Highlights
 
 Highlights section of the Settings menu allows for the creation and configuration of Highlights.
 
 Highlight lists are desk-specific curated lists of news items. They are commonly used for making top-10 lists, section features and other types of user-curated lists. Highlights can be automatically generated against user-specified metadata, or manually curated. Highlight lists can be easily published or simply used for Superdesk internal communication of important news items.
-**![](./images/image115.png)**
+![](./images/image115.png)
 
 New Highlight lists can only be created from this menu: *Hamburger menu \> Settings \> Highlights*.
 
@@ -130,7 +130,7 @@ To create a new Highlight, click the CREATE *CONFIGURATION* button located in th
 **TEMPLATE:** This drop-down menu chooses the template that will be applied when a new article is added to  this Highlight.
 **ASSIGNED DESKS:** These are the desks which will be able to view the Highlight, additionally, these are the desks that items are automatically added from upon creation of the Highlight. **AUTOMATICALLY INSERT ITEMS:** This drop-down menu allows you to choose the timeframe in which items are automatically added to the Highlight upon creation. For example, if you check the Adelaide desk and select 12 hours from the AUTOMATICALLY INSERT ITEMS FROM drop-down menu, all items from the Adelaide desk from the last 12 hours will be added upon creation. Otherwise, after a Highlight is created, all curation is done manually. If you want to create a Highlight that is entirely curated manually, do not select any desk on creation. This Highlight will then be available to *all desks* and those users with appropriate privileges will be able to add content to the Highlight.
 
-### Metadata
+## Metadata
 
 Within Superdesk, most of the fields are configurable in order to meet the needs of your organization. The metadata section of the Settings menu allows users to define fields not only for news item creation, but also media contacts, events and planning, etc.
 
@@ -154,7 +154,7 @@ To define a new field, click on the \+ADD NEW button in the top-right corner of 
 **SHOW TO USERS AS**: Choose from single selection, multi-selection or neither. Sometimes
 **ITEMS**: If the field has multiple values, enter the values that users can choose from in this section. Use the \+ADD ITEM button to add further values.
 
-### Search Providers
+## Search Providers
 
 The Search Providers tab enables administrators to set up external content providers for external image searches within Superdesk, for example.
 
@@ -165,7 +165,7 @@ Click the \+ADD NEW button in the upper-right corner of the Search providers win
 
 The window that opens enables you to toggle the Search Provider on or off, select the provider type and enter the source name. The username and password credentials must also be entered in this window in order to configure the Search Provider functionality.
 
-### Templates
+## Templates
 
 The Templates pane displays all current Templates for your Superdesk instance. Templates are Content Profiles that contain metadata fields that are already filled-in.  Templates have several uses within Superdesk. They can save time in routine news item creation, they can be used to auto-generate articles, they can be the generic kill notification sent to subscribers, or they can be used to auto-format items in a Highlight List.
 

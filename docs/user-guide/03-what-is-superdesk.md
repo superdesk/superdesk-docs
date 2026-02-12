@@ -66,19 +66,19 @@ To exit the Hamburger Menu, click on the *Workspace* link at the top of the menu
 
 Below the Hamburger Menu icon is the Workspace Panel which allows you to navigate within the currently selected desk (as denoted by the title displayed on the Desks menu). You will see a column of various blue and white icons:
 
-![](./images/image252.png)**Dashboard** \- The Dashboard provides an overview of the current desk (or Custom Workspace) through widgets selected by the desk manager: monitoring, activity stream, ingest stats, world clocks, routing etc.
+![](./images/image252.png) **Dashboard** \- The Dashboard provides an overview of the current desk (or Custom Workspace) through widgets selected by the desk manager: monitoring, activity stream, ingest stats, world clocks, routing etc.
 
 ![](./images/image105.png) **Monitoring** \- This is the main tab for item creation and workflow monitoring. It can be configured by a desk manager to show any number of Stages for the selected desk as well as Saved Searches, with a desk-specific search available at the top. New news items can be created using the Create icon in the top right corner of this panel.
 
 ![](./images/image303.png) **Assignments** \- If the Supedesk Planning Component is installed, you may see this icon in your Workspace Panel. Track your assigned tasks here.
 
-![](./images/image15.png)**Highlights** \- Highlights are most commonly used for content indexes, top-10 lists, section highlights and all manner of user-curated lists. Highlights can also be generated automatically against user-defined metadata, manually curated or scheduled for publication/distribution. Highlight lists can be easily turned into a Package. All users can view the Highlight list, but only users with appropriate permissions may add news items to a Highlight list.
+![](./images/image15.png) **Highlights** \- Highlights are most commonly used for content indexes, top-10 lists, section highlights and all manner of user-curated lists. Highlights can also be generated automatically against user-defined metadata, manually curated or scheduled for publication/distribution. Highlight lists can be easily turned into a Package. All users can view the Highlight list, but only users with appropriate permissions may add news items to a Highlight list.
 
-![](./images/image345.png)**Spike** \- Shows news items that have been removed from the workflow of the selected desk. Spiked news items can be returned to the desk workflow if necessary. News items that expire are not sent to the Spike, but rather deleted permanently.
+![](./images/image345.png) **Spike** \- Shows news items that have been removed from the workflow of the selected desk. Spiked news items can be returned to the desk workflow if necessary. News items that expire are not sent to the Spike, but rather deleted permanently.
 
-![](./images/image330.png)**Personal Space** \- Private space for creating items that cannot be viewed by other users. Items created here can be sent to other desks when they are ready to be reviewed by your peers. Items in personal space cannot be seen by your fellow desk members, desk managers, or desk admins, and your content is invisible to any Superdesk search. Do not leave content here that is needed in workflow/production. Your Personal Space can also be accessed from the Hamburger menu.
+![](./images/image330.png) **Personal Space** \- Private space for creating items that cannot be viewed by other users. Items created here can be sent to other desks when they are ready to be reviewed by your peers. Items in personal space cannot be seen by your fellow desk members, desk managers, or desk admins, and your content is invisible to any Superdesk search. Do not leave content here that is needed in workflow/production. Your Personal Space can also be accessed from the Hamburger menu.
 
-![](./images/image354.png)**Search** \- Allows you to search and browse articles in Superdesk’s internal repository,   third-party content feeds (or any other content repository Superdesk is aware of). You can also create Saved Searches from this tab.
+![](./images/image354.png) **Search** \- Allows you to search and browse articles in Superdesk’s internal repository,   third-party content feeds (or any other content repository Superdesk is aware of). You can also create Saved Searches from this tab.
 
 ## Superdesk behaviours and icons
 
@@ -111,7 +111,8 @@ You will also sometimes find the Create icon in the various parts of the Hamburg
 ###### Action menus
 
 You will find action menus in various parts of Superdesk. Below is an example of an action menu in the Monitoring view. In the Monitoring pane, the action menu will appear when you mouse-over any of the news items in the pane.
- ![](./images/image112.png)
+
+![](./images/image112.png)
 
 In the Monitoring view, clicking on an action menu to an item’s right will bring up a list of actions that you can affect on it. The actions available will depend on your role, permissions, and whether the item is already opened by other users.
 
@@ -134,6 +135,7 @@ The list view in the Monitoring pane can be hidden using the the chevrons that a
 ![](./images/image223.png)
 
 Similarly, the list view can be expanded again by clicking the chevron to return the list to its original position. This action can only be used when news items are open for editing.
+
 ![](./images/image86.png)
 
 ###### Workspace Bar

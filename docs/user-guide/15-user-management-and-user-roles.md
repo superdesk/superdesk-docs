@@ -20,7 +20,9 @@ In the User Management list view, online users are marked with a solid green cir
 
 ### Adding New Users
 
-![](./images/image3.png) This is the Create icon.
+![](./images/image3.png)
+
+This is the Create icon.
 
 In the top-right corner of the User Management window, you can use the Create icon to add new users to your Superdesk instance. Clicking the Create icon will open a pane on the right where you can input all the information for your new user:
 
@@ -58,11 +60,13 @@ Clicking on the *VIEW FULL PROFILE* link at the top of the user profile tab will
 ###### Overview tab
 
 The top half of the Overview tab contains basic contact information such as your display name, sign-off, email address, and your contact phone number. You can edit these fields directly from this Overview tab. Note that you cannot change your username once the account is created, so be sure to choose the username carefully.
+
 ![](./images/image275.png)
 
 In the bottom half of the Overview tab, you can change your Superdesk display language. This will translate the Superdesk user interface to a language of your choosing. You can help us translate Superdesk by visiting this website: [https://www.transifex.com/sourcefabric/superdesk/](https://www.transifex.com/sourcefabric/superdesk/)
 
 In the Overview tab you can also change your login password. Click on the *reset password* button. This feature can be used by admins to reset the password of a user.
+
 ![](./images/image377.png)
 Remember to click the blue SAVE button to confirm your changes. Click the CANCEL button to discard your changes without saving.
 
@@ -111,6 +115,7 @@ Preferred Desks allow you to customise which desks appear first in your workflow
 ### Resetting a User’s Password
 
 If a user has forgotten their Superdesk password, admins can open the user profile tab and click the *reset password* link to send the user an email to the user with instructions on resetting their password.
+
 ![](./images/image159.png)
 
 ## User Roles

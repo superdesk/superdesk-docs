@@ -14,7 +14,9 @@ You can have several Highlights at a time to deliver relevant content organised 
 
 ### Adding articles to a Highlight List
 
-![](./images/image384.png)This is the Action Menu.
+![](./images/image384.png)
+
+This is the Action Menu.
 
 To add a news item to a Highlight List, find the article that you wish to add in either the Monitoring, Search or Content sections of the Workspace Panel. When you hover over the news item, the Action menu will appear.
 
@@ -40,15 +42,41 @@ It’s also possible to select multiple items in the Highlights by using the ico
 
 Once you have selected items using the checkboxes, you can click the icons that appear in the top right of the pane to perform actions such as export, multi-edit spike, sent to, publish, create packages and mark for user provided you have the permission to do so.
 
-![](./images/image180.png) Export \- Download the news item to a Superdesk-external location.
-![](./images/image193.png) Multiedit \- Select items to open side-by-side for simultaneous editing.
-![](./images/image154.png) Spike \- Remove the selected item from the desk workflow.
-![](./images/image287.png) Send to \- Move the news item from its current stage to another desk or stage.
-![](./images/image267.png) Publish \- Publish this item
-![](./images/image170.png) Create Package \- Combine the selected items into a new package.
-![](./images/image80.png) Highlight Item \- Add the selected item to a different Highlight.
-![](./images/image288.png) Mark for User \- The user will receive a notification to follow up on the selected item.
-![](./images/image147.png) Duplicate \- Make a copy in the same location, or a different location.
+![](./images/image180.png)
+
+Export ‐ Download the news item to a Superdesk-external location.
+
+![](./images/image193.png)
+
+Multiedit ‐ Select items to open side-by-side for simultaneous editing.
+
+![](./images/image154.png)
+
+Spike ‐ Remove the selected item from the desk workflow.
+
+![](./images/image287.png)
+
+Send to ‐ Move the news item from its current stage to another desk or stage.
+
+![](./images/image267.png)
+
+Publish ‐ Publish this item
+
+![](./images/image170.png)
+
+Create Package ‐ Combine the selected items into a new package.
+
+![](./images/image80.png)
+
+Highlight Item ‐ Add the selected item to a different Highlight.
+
+![](./images/image288.png)
+
+Mark for User ‐ The user will receive a notification to follow up on the selected item.
+
+![](./images/image147.png)
+
+Duplicate ‐ Make a copy in the same location, or a different location.
 
 ### Creating a new Highlight Configuration in the Settings menu
 

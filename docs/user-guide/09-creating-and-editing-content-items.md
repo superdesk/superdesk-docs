@@ -1,6 +1,8 @@
 # Creating and Editing Content Items
 
-![](./images/image50.png)This is the Create icon.
+![](./images/image50.png)
+
+This is the Create icon.
 
 On your Dashboard the Create icon allows you to add widgets. On the Monitoring tab, or in your Personal Space, the Create icon allows you to make new articles, new packages or upload audio, pictures, and video from your computer into Superdesk. On the Dashboard tab, the Create icon only allows you to add widgets to your Dashboard. In versions of Superdesk 1.33 and later, you will also find the option to create new content items using the new icon in the bottom right of the Superdesk interface.
 
@@ -8,7 +10,7 @@ On your Dashboard the Create icon allows you to add widgets. On the Monitoring t
 
 This upgrade allows you to create new content items in all panes, not just the Monitoring tab.
 
-### Making New Articles
+## Making New Articles
 
 To start writing a news item, or to upload some media from an external source, click the Create icon in the top right corner of the Monitoring Pane, or Personal Space. In versions of Superdesk after 1.33, you will also find the option to create items in the bottom right corner of the interface, regardless of which pane you’re on. Clicking the Create icon in either of these locations will open a menu:
 
@@ -35,26 +37,86 @@ When you have chosen to create a new plain text item, for example, you may see a
 
 When you type in the Body HTML box, you will see a blue bar with icons above the textbox .This is where you are able to add formatting to your text.
 
-![](./images/image35.png)/![](./images/image43.png)etc. These buttons will make highlighted text into a heading.
-![](./images/image324.png)This button places all the text on the current line into a special formatting for quotes.
-![](./images/image22.png) This button adds a bulleted list formatting to your cursor location or highlighted text.
-![](./images/image353.png) This button adds a numbered list formatting to your cursor location or highlighted text.
-![](./images/image53.png) If you are pasting text from another source, and you want to preserve the formatting from the original source, select this button to keep the formatting from the original source.
-![](./images/image246.png) This button will make highlighted text **bold**.
-![](./images/image57.png)  This button will make highlighted text *italic*.
-![](./images/image20.png) This button will make highlighted text underlined.
-![](./images/image84.png) This button will make the highlighted text ~~strikethrough~~.
-![](./images/image404.png) This button will add a superscript to the highlighted text, for example: 4**2** \= 16
-![](./images/image374.png) This button will add a subscript to the highlighted text, for example: H**2**O
-![](./images/image220.png)This button allows you to add a website link or link an attachment.
-![](./images/image44.png) This button allows you to add an embed. Enter a URL or code to embed.
-![](./images/image121.png)This button allows you to add media into the body text field. Depending on your Content Profile settings, there might also be fields specifically for feature media.
-![](./images/image311.png) This button allows you to add a table. Once the table is inserted, you can add additional rows, columns and formatting. While editing the table, these options are available at the top of the Body Html field.
-![](./images/image95.png)To remove formatting from a section of text, highlight the text and click this button.
-![](./images/image240.png) This button allows you to add [Comments](#using-the-inline-comments-feature). If you use the @ symbol, you can notify selected users of your comments. Comments can be viewed using the Editor Sidebar.
-![](./images/image163.png) This button allows you to add [Annotations](#using-the-annotations-feature).
-![](./images/image314.png) This [Suggestions Mode](#using-the-suggestions-mode) button allows users to collaborate on an article but proposing changes, while leaving the original text intact.
-![](./images/image194.png) This button allows you to view formatting, which would otherwise be invisible, for example line breaks, which become highlighted in blue.
+![](./images/image35.png)
+
+![](./images/image43.png)
+
+These buttons will make highlighted text into a heading.
+
+![](./images/image324.png)
+
+This button places all the text on the current line into a special formatting for quotes.
+
+![](./images/image22.png)
+
+This button adds a bulleted list formatting to your cursor location or highlighted text.
+
+![](./images/image353.png)
+
+This button adds a numbered list formatting to your cursor location or highlighted text.
+
+![](./images/image53.png)
+
+If you are pasting text from another source, and you want to preserve the formatting from the original source, select this button to keep the formatting from the original source.
+
+![](./images/image246.png)
+
+This button will make highlighted text **bold**.
+
+![](./images/image57.png)
+
+This button will make highlighted text *italic*.
+
+![](./images/image20.png)
+
+This button will make highlighted text underlined.
+
+![](./images/image84.png)
+
+This button will make the highlighted text ~~strikethrough~~.
+
+![](./images/image404.png)
+
+This button will add a superscript to the highlighted text, for example: 4**2** \= 16
+
+![](./images/image374.png)
+
+This button will add a subscript to the highlighted text, for example: H**2**O
+![](./images/image220.png)
+
+This button allows you to add a website link or link an attachment.
+
+![](./images/image44.png)
+
+This button allows you to add an embed. Enter a URL or code to embed.
+
+![](./images/image121.png)
+
+This button allows you to add media into the body text field. Depending on your Content Profile settings, there might also be fields specifically for feature media.
+
+![](./images/image311.png)
+
+This button allows you to add a table. Once the table is inserted, you can add additional rows, columns and formatting. While editing the table, these options are available at the top of the Body Html field.
+
+![](./images/image95.png)
+
+To remove formatting from a section of text, highlight the text and click this button.
+
+![](./images/image240.png)
+
+This button allows you to add [Comments](#using-the-inline-comments-feature). If you use the @ symbol, you can notify selected users of your comments. Comments can be viewed using the Editor Sidebar.
+
+![](./images/image163.png)
+
+This button allows you to add [Annotations](#using-the-annotations-feature).
+
+![](./images/image314.png)
+
+This [Suggestions Mode](#using-the-suggestions-mode) button allows users to collaborate on an article but proposing changes, while leaving the original text intact.
+
+![](./images/image194.png)
+
+This button allows you to view formatting, which would otherwise be invisible, for example line breaks, which become highlighted in blue.
 
 Note: If you are using an older version of the Superdesk editor that doesn’t have the *remove formatting* button, you will need to select the text and click the same button as you used to add the formatting. For example, to remove the quote formatting from a line in an older version of the editor, put your cursor on the line containing the quote formatting, then deselect the quote button above the text.
 
@@ -64,7 +126,9 @@ As shown above, Superdesk tracks the word count and character count of your arti
 
 ##### Using the Suggestions Mode
 
-![](./images/image9.png) When adding text in the Body HTML field, users have the option to toggle the Suggestions Mode using the button displayed above.
+![](./images/image9.png)
+
+When adding text in the Body HTML field, users have the option to toggle the Suggestions Mode using the button displayed above.
 
 ![](./images/image196.png)
 
@@ -76,7 +140,9 @@ Changes can be accepted or rejected by clicking on the altered text and selectin
 
 ##### Using the Annotations feature
 
-![](./images/image188.png) The Annotations button may appear in the formatting options at the top of the Body HTML field when editing a news item.
+![](./images/image188.png)
+
+The Annotations button may appear in the formatting options at the top of the Body HTML field when editing a news item.
 
 The Annotations feature allows journalists to provide additional contextual information on statements or events mentioned in their article. Your article can have any number of Annotations.
 
@@ -121,7 +187,9 @@ Once you hit the SAVE button, your annotation will be available to select using 
 
 ##### Using the Inline Comments feature
 
-![](./images/image383.png) Users can add comments to the body of news articles using the Inline Comments feature in the toolbar at the top of the Body HTML field.
+![](./images/image383.png)
+
+Users can add comments to the body of news articles using the Inline Comments feature in the toolbar at the top of the Body HTML field.
 
 To add a Comment, highlight some text in the Body HTML field of an article, then click the Comments button in the toolbar above.
 
@@ -143,7 +211,9 @@ To resolve a Comment, click on the highlighted text in the Body HTML field and c
 
 ##### Adding Media to the Body of your Article
 
-**![](./images/image71.png)** This button allows you to add media into the body text field.
+![](./images/image71.png)
+
+This button allows you to add media into the body text field.
 
 Clicking on the media icon at the top of the Body text field will prompt you to upload a media item from your computer. You can select multiple media items to upload at the same time.
 
@@ -179,9 +249,7 @@ If you selected the crop button, you can crop the photo by clicking and dragging
 
 When you select the Edit ***Crops*** button at the top of the pane, you will be able to select from some predetermined image sizes. You can change the area of interest by moving the crosshairs on the image at the top.
 
-###
-
-### Creating Packages
+## Creating Packages
 
 Packages are groupings of several news items. There are several ways to create a Package. You can create an empty package from the Create icon in the top right corner of the Monitoring Pane (or Custom Workspace), as in the screenshot below:
 
@@ -199,9 +267,11 @@ You can also choose to create a new package with selected content items using th
 
 See the Packaging section in the Superdesk Manual for more ways to create packages here: [Packages](#packages).
 
-### Moving Items between Desks and Stages
+## Moving Items between Desks and Stages
 
-![](./images/image359.png)This is the ‘*Send To’* button.
+![](./images/image359.png)
+
+This is the '*Send To'* button.
 
 If you created an article in your Personal Space, when you are satisfied with your article, you can choose to send it to a Desk to be reviewed by others by clicking the *‘Send To’* button in the top-right corner of the article editing window. If you created an article on a Desk, it will automatically be visible to others.
 
@@ -211,44 +281,54 @@ Depending on your user permissions, you can also send the news item for publishi
 
 If you are not ready to send it to publishing or to a Desk, you can click the blue *SAVE* button in the top-right corner of the article editing window*, then* click *CLOSE* to revisit the article at a later time.
 
-### Editing and Re-opening Existing Items
+## Editing and Re-opening Existing Items
 
 You will find item list views in the Monitoring pane, Search pane, or in your Personal Space tab. Mousing over any item in a listview will reveal an Action menu on the item’s right.
 
-![](./images/image166.png) This is an Action menu.
+![](./images/image166.png)
+
+This is an Action menu.
 
 ![](./images/image302.png)
 
 When you wish to continue writing your article, hover over it, click the Action menu in the list view and then select *Edit*. (Note that the items that are available in an action menu will depend on the news item’s current status, your permissions and whether you have the planning component as part of your Superdesk instance.)
 
-Once the item is opened for editing, you will see several icons along the top of the editing pane.
 ![](./images/image298.png)
 
 Along the top of the editing window, you will find several tools.
 
-![](./images/image351.png) Minimise icon.
+![](./images/image351.png)
+
+Minimise icon.
 
 The first button allows you to minimise your current article. A shortcut to the article will appear at the bottom of the Superdesk interface in the Workspace Bar.
 
 The second icon is an Action menu. Selecting it opens a pop-up menu with options to save the formatting as a template, open the item in the Multi-edit side-by-side editing mode, run a spell check, etc. Dictionaries for your spell check can be set up in the settings section of the Hamburger menu in the top-left corner of the Superdesk interface. In this action menu you can find the Multiedit option, which allows you to have more than one article open side by side. Selecting the Multiedit option will make the article available to be viewed in the Multiedit mode. Multiedit mode can also be accessed from the Monitoring tab by selecting multiple articles using the checkboxes and then clicking the Multiedit button in the top-right corner.
 
-![](./images/image46.png) This is the *Send to* button.
+![](./images/image46.png)
+
+This is the *Send to* button.
 
 The third icon is the *Send to* button. It allows you to send your article to a particular Desk, Stage or to publish it, depending on your user permissions.
 
-### Editor Sidebar
+## Editor Sidebar
 
 The Editor Sidebar provides additional options for items that are opened for editing. Note that different items might appear in your Editor Sidebar, depending on which Content Profile you are using.
 
-![](./images/image81.png) This is the Editor Sidebar.
+![](./images/image81.png)
+
+This is the Editor Sidebar.
 
 When a tab in the Editor Sidebar is open, the icon will be blue. To close the tab, mouse over the blue icon, and it will turn into an ‘x’. Click the ‘x’ to close the tab.
 
 #### Info Button
 
 Below the ‘*Send to’* button you’ll find the Editor Sidebar. The first button below the ‘*Send to’* button is the Info button.
- ![](./images/image367.png)
+
+![](./images/image367.png)
+
 The *Info* button allows you to add metadata to your article, view the article expiry, and change the unique name for your article.
+
 ![](./images/image32.png)
 
 In the Metadata tab of the Editor Sidebar, you will find the following:
@@ -281,6 +361,7 @@ In the info tab of the Editor Sidebar, you will also find data about version, so
 
 ![](./images/image110.png)
 The Find and Replace feature allows you to locate and update specific words and phrases. It can be a great time-saving feature for editors and journalists.
+
 ![](./images/image273.png)
 Type the word you wish to adjust in the *FIND* text box, then type your new word in the *REPLACE WITH* textbox. The *REPLACE ALL* button will replace every instance of the word with what you put in the *REPLACE WITH* textbox. You can also replace them one at a time with the *REPLACE* button, instead of *REPLACE ALL*.
 
@@ -289,12 +370,15 @@ Type the word you wish to adjust in the *FIND* text box, then type your new word
 ![](./images/image40.png)
 Clicking on the Comments icon allows you to have general discussions about the news item’s content with other users. Note that these Comments are different from the Inline Comments feature. [Inline Comments](#inline-comments) are used in the Body HTML field to make specific comments about parts of the news item’s content and can be found in the Inline Comments tab of the Editor Sidebar.
 This Comments tab is designed for more general types of discussions.
+
 ![](./images/image281.png)
+
 The number of new comments is shown in the info bubble. New comments can be added at the bottom of this Comments pane. Type your comment in the textbox, then click the POST button.
 
 #### Versioning
 
 ![](./images/image313.png)
+
 If you are writing and editing your article over multiple sessions, every time you save your article, Superdesk will retain a copy. In addition to user initiated saves, Superdesk will perform an autosave after you stop typing for 3 seconds. You will see the most recent autosave in your Versions tab in addition to your previous saves.
 
 ![](./images/image207.png)
@@ -305,19 +389,21 @@ The Item History tab will let you see who created the item, when the item was up
 #### Packages Info
 
 ![](./images/image209.png)
+
 Clicking on the Packages tab in the Editor Sidebar will let you know if the item that is currently open is part of any packages. If the article you selected belongs to any packages, a link to the packages will be displayed here, along with the date and time that it was added to the package.  In the example below, the headline of the package that the item is a part of it ‘GET YOUR PACKAGE HERE’. Clicking on the package will allow you to view the Package, or edit it, if you have the appropriate permissions.
+
 ![](./images/image41.png)
 
 #### Macros
 
 ![](./images/image101.png)
-While Marcos are created in the backend of Superdesk, you can view the macros and apply them here. Macros can be grouped using the toggle at the top of the tab to help you find the one you’re looking for faster.
-![](./images/image297.png)
+While Marcos are created in the backend of Superdesk, you can view the macros and apply them here. Macros can be grouped using the toggle at the top of the tab to help you find the one you’re looking for faster.![](./images/image297.png)
 
 #### Attachments
 
 ![](./images/image58.png)
 The attachments tab allows you to add files, and view files that are attached to the news item. Clicking on the attachments tab will open a new pane, from which you can add new attachments.
+
 ![](./images/image372.png)
 Click the ATTACH FILES button to upload new attachments. Clicking on the ATTACH FILES button will open a new pane from which you can select files to upload. Note that these attachments can be Superdesk internal, or published with the news item. Use the toggle on the Attach Files pane to set this parameter:
 ![](./images/image2.png)
@@ -327,6 +413,7 @@ You may also need to add a title and description for your attachment. Depending 
 
 ![](./images/image14.png)
 This tab allows you to view the Inline Comments that have been submitted for this item. These Inline comments are not transmitted in publication but will remain associated with an article even if it is sent to another desk, or published.
+
 ![](./images/image263.png)
 
 To add Inline Comments, highlight text in the Body Html textbox when you are creating a news item. Select the Comments icon in the toolbar above them in the text box, then click the blue *SUBMIT* button.
@@ -340,6 +427,7 @@ The *Related Items* tab allows you to view items that share the same slugline or
 Once you click on the Related Items icon in the Editor Sidebar, you can type keywords into the search bar of the Related Items pane to generate a list of items that share the same slugline (or other configured field).
 
 Note that the Related Items tab only displays while you edit *text* items, not packages or media.
+
 ![](./images/image239.png)
 Clicking on the action menu of an item in the Related Items tab will allow you to open the item, associate the metadata for the items, or associate the item as an update.
 

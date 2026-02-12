@@ -8,9 +8,9 @@ Ingest is the way in which articles from other news sources arrive in Superdesk.
 
 ![](./images/image153.png)
 
-###
+##
 
-### Creating New Ingest Sources
+## Creating New Ingest Sources
 
 ![](./images/image65.png)
 
@@ -57,7 +57,8 @@ If an article is older than the expiry limit, it will not be ingested.
 This Superdesk feature is great for making sure your newsroom is only publishing the most current and relevant news. If no expiry is selected, Superdesk will use the default desk expiry, if any.
 
 **Allow Remove Ingested Items**
-**![](./images/image276.png)**
+![](./images/image276.png)
+
 With this enabled, users with appropriate permissions are able to remove ingested items that haven’t been fetched to a desk.
 
 **Rule Sets**
@@ -87,7 +88,7 @@ The RULE NAME field is where you will name your routing rules. These rules are d
 
 The Action tab dictates what will be done when an ingested article meets the content filters criteria. You are able to publish items at this point or fetch them to a desk. Setting up these schemes properly can save journalists a lot of time searching through the Ingest manually. The *Exit* setting will exit the routing scheme once the criteria is met. The *Preserve Desk* switch, if enabled, will not change the desk of an ingested article if it already has a destination desk set elsewhere. Schedule allows you to decide when this Routing Scheme is applied, an example would be if you have a specific desk for urgent news outside of office hours.
 
-### Ingest Dashboard
+## Ingest Dashboard
 
 The Ingest Dashboard can be found in the Admin Tools section of the Hamburger menu.
 

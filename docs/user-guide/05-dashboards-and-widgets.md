@@ -1,6 +1,8 @@
 # Dashboards and Widgets
 
-![](./images/image145.png) You will find your Dashboard icon on your Workspace Panel.
+![](./images/image145.png)
+
+You will find your Dashboard icon on your Workspace Panel.
 
 The Dashboards for shared Desks are pre-configured by administrators (or other users with the required privileges, such as bureau chiefs, desk heads, etc). The Dashboard is designed to give a quick overview of information that matters for the respective desk’s members. Users are able to configure the Dashboards in their Custom Workspaces. You can return to your Dashboard by clicking the home-shaped icon in the Workspace Panel, on the left.
 
@@ -12,7 +14,9 @@ Beside the Hamburger Menu, you’ll see the blue drop-down Desks menu. It will d
 
 Changes that are made to a Dashboard on a Desk will be visible to all users assigned to that Desk. Widgets on the Dashboard of your Custom Workspace are visible only to you.
 
-![](./images/image251.png) This is the Create icon.
+![](./images/image251.png)
+
+This is the Create icon.
 
 When you are on a Dashboard, you will see the Create icon in the top right corner of the Dashboard pane, just below your user icon.
 
@@ -22,7 +26,9 @@ If you have the appropriate privileges, you can customise the widgets on your De
 
 You can arrange the widgets on your Dashboard in any configuration you like.
 
-![](./images/image215.png) This is the Rearrange Widgets icon.
+![](./images/image215.png)
+
+This is the Rearrange Widgets icon.
 
 Click the *Rearrange Widgets* button at the top-right corner of the main interface, then select and drag a widget to the desired area of your Dashboard to place it.
 
@@ -38,7 +44,7 @@ Click and drag the body of the widget to move it to a different spot on the Dash
 
 Each widget also has several settings associated with it. Click the gear icon in the top-right corner of a widget to adjust the individual settings for that widget.
 
-	![](./images/image192.png)
+![](./images/image192.png)
 
 When you are satisfied with the size and layout of your widgets, click the blue checkmark in the top-right of the Superdesk interface to keep these changes.
 
@@ -94,6 +100,7 @@ The Ingest widget allows you to track information about the types of news items 
 ![](./images/image286.png)
 
 To add an Ingest Stats Widget to your Dashboard, click the Create icon in the top right corner of the Dashboard pane, then select the Ingest Stats option, and click ADD THIS WIDGET.
+
 ![](./images/image72.png)
 
 In the Ingest Stats Configuration window, select a source type from the first drop-down menu:
@@ -119,6 +126,7 @@ If all of the items are from the same source, urgency or item type, you will onl
 #### Activity Stream Widget Settings
 
 ![](./images/image212.png)
+
 To add an Activity Stream Widget to your Dashboard, click the Create icon in the top right corner of the Dashboard pane, then select the Activity Stream option, and click ADD THIS WIDGET.
 
 ![](./images/image7.png)
@@ -147,6 +155,7 @@ Once the widget has been created on the Dashboard, you will need to select a use
 ![](./images/image268.png)
 
 Only users who are members of the Desk are shown in the drop-down menu.
+
 ![](./images/image291.png)
 
 In the example of a User Activity Widget, shown above, the only activity that the above user has done is create a new item, and attach photos to it. Each uploaded photo appears as a separate entry in this case.

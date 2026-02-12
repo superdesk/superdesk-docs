@@ -6,8 +6,7 @@ Once an admin creates an account for you in Superdesk, you will receive an email
 
 ### Editorial Notes
 
-A section for Editorial Notes in a news item’s metadata provides Editors with a means for adding notices to content that will be sent to subscribers. The Editorial Notes is a metadata text box in the article editing window, just above the Headline. In order to use the Editorial Notes, please ensure that the field is enabled in the [Content Profile](#content-profiles) that you are using.
-![](./images/image257.png)
+A section for Editorial Notes in a news item’s metadata provides Editors with a means for adding notices to content that will be sent to subscribers. The Editorial Notes is a metadata text box in the article editing window, just above the Headline. In order to use the Editorial Notes, please ensure that the field is enabled in the [Content Profile](#content-profiles) that you are using.![](./images/image257.png)
 
 Editorial Notes can be entered anytime before an article is published, by entering text in the Editorial Notes line of the article metadata.
 
@@ -71,13 +70,13 @@ Another useful Templates feature is that Templates can be assigned to a Stage, a
 
 #### Multiedit
 
-###  ![](./images/image255.png)
+![](./images/image255.png)
 
 The *Multiedit* button allows you to toggle between multiple open content items, as well as to display two plain text items side by side in editing mode. You can enable the Multiedit mode for an article in the action menu at the top of the article editing window. You will find the Multiedit button at the top of the article list. You can select up to 12 articles to open in Multiedit mode at the same time.
 
 #### Highlights
 
-###  ![](./images/image371.png)
+![](./images/image371.png)
 
 Highlight lists are desk-specific curated lists of important news items. As an editor, Highlights can be used to keep the Desk members up-to-date on the day’s top stories. The Highlights icon located on the Workspace Panel allows you to view all the items you have highlighted and Highlights for the desk you’re currently on. They are commonly used for making top 10 lists, section features and other types of user-curated lists. Highlights can be automatically generated against user-specified metadata, or manually curated. Highlight lists can be easily published, or simply used for Superdesk internal communication of important news items.
 
@@ -102,18 +101,25 @@ Custom Workspaces are private view configurations accessible from the Desks menu
 
 In your Custom Workspace Monitoring view, you can select the Desks, Stages and Saved Searches that you want to place in your custom monitoring view by selecting the gear icon located in the top-right corner. This is especially useful for monitoring several Desks in a single place.
 
-![](./images/image366.png) Personal Space is an icon located on the Workspace Panel. Your Personal Space can also be accessed from the Hamburger menu.
+![](./images/image366.png)
+
+Personal Space is an icon located on the Workspace Panel. Your Personal Space can also be accessed from the Hamburger menu.
 
 Only you can view or edit items created in your Personal Space. To create a new Personal Item, click the Create icon in the top-right corner of the Personal Space pane.
 
 ### Comments
 
 When an article is open for editing, users can add Comments to each news item with Twitter-like @mentions.
-![](./images/image222.png)![](./images/image228.png)
+
+![](./images/image222.png)
+
+![](./images/image228.png)
 
 This feature is useful for alerting other Desks or users to the content in a hurry.
 
-![](./images/image246.png) This is the Comments button in the Editor Sidebar.
+![](./images/image246.png)
+
+This is the Comments button in the Editor Sidebar.
 
 Comments can be viewed in the Editor Sidebar, when an article is open for editing, using the Comments button displayed above.
 Comments can be added to the Body of a news item using the [Inline Comments feature](https://docs.google.com/document/d/1chk8SglS6yZCwqhMLo37mvF5HsZ6iv6Z-x3ASgC4l-0/edit?disco=AAAACmwuhN4&usp_dm=false&ts=5caf5429#heading=h.xfv1omnhpquh).
@@ -127,7 +133,9 @@ User privileges are set by administrators by selecting *Hamburger menu \> User M
 
 When a news item is open for editing, you can use the Suggesting feature to collaborate with the article’s author to make changes to the text while preserving the content in its original form. (Suggesting mode is available in the full version of editor 3\. Older versions of the editor may not have access to Suggesting mode.)
 To make use of the Suggesting feature, use the Suggesting mode button in the toolbar above the Body HTML textbox.
+
 ![](./images/image108.png)
+
 When Suggesting mode is turned on, additions to the text will be shown in green and deletions will be shown in red. [Read more about using Suggesting mode](#using-the-suggestions-mode).
 
 ### Mark for User

@@ -14,6 +14,7 @@ When you click on *Select Workspace* (the Desks menu) in the upper-left corner b
 The Dashboard for each Desk will display widgets configured by your editor or admin. You can customise the Dashboard widgets on your Custom Workspace Dashboard.
 
 ![](./images/image167.png)
+
 The Monitoring View is a space where journalists or production staff can keep up-to-date on the content in each work Stages, create new items and move content between stages. The Monitoring View can also be set up to show Saved Searches. The content of the Monitoring View tab is set up by your desk administrator, in the Desks section of the Hamburger menu.
 
 ### Content Workflow
@@ -24,8 +25,7 @@ Click the *Monitoring* icon (second icon on the Workspace Panel) to enter the *M
 
 To create an article, select a content profile or a template you’d like to create from. Once you enter metadata and some text, you can hit the *SAVE* button in the top-right corner to save it as a draft. Articles will be saved to the Desk you are currently working on. If you are working in a custom workspace, the article will be saved to the current user’s default desk.
 
-![](./images/image226.png)
-You can keep an article open but minimise it by clicking the *minimise* icon located beside the *SAVE* button at the top of the article editing pane.
+![](./images/image226.png)You can keep an article open but minimise it by clicking the *minimise* icon located beside the *SAVE* button at the top of the article editing pane.
 
 Note: If you don’t close the article, it will lock, preventing other users from updating it (though senior staff can override this). All your open items remain visible in the Workspace Bar located at the bottom of the Superdesk interface. If a user session hasn’t been updated in four hours, the session is terminated and the lock is dropped. While you are editing an item, it is locked, preventing any other users from making changes to it. This is denoted by a red stripe that appears next to the article entry in the Monitoring tab.
 
@@ -47,7 +47,8 @@ If you are interested in monitoring incoming RSS content and content being produ
 To do this, first click the *Search* icon on the Workspace Panel and set the parameters for your Advanced Search. When you input your desired Search parameters and perform the search, a blue button reading ‘*Save Search’* appears at the bottom of the screen.
 
 Make sure you turn on the Global Read toggle to make the Saved Search available for use in a Monitoring widget that is not in your Custom Workspace. Saved Searches do not need to be saved as a Global Read if you are only using it in your Custom Workspace.
-             ![](./images/image261.png)
+
+![](./images/image261.png)
 
 You should now see the Saved Search by clicking on the Saved tab of the Advanced Search panel. Note: If your search does not return any content, you can still save the search and be alerted when new content corresponding to the search comes into the system.
 
@@ -70,12 +71,15 @@ There are several ways to bundle images and text together. You can create a pack
 
 ### Sending Drafts
 
-![](./images/image120.png)This is the Send to/Publish icon.
+![](./images/image120.png)
+
+This is the Send to/Publish icon.
 
 If you created an item in your Personal Space, when you are satisfied with your article, you can choose to send it to a Desk to be reviewed by others by clicking the *‘Send to’* button in the top-right corner of the article editing window. If you created an article on a Desk, it will automatically be visible to others. Depending on your permissions, you may be able to send it to the publishing queue using the *Send to/Publish* button as well. If you are not ready to send it to publishing or to a Desk, you can click the *SAVE* button*, then* *CLOSE* to revisit the article at a later time.
 
 When you are ready to move a content item into another stage of the content workflow, click the ‘*Send to’* button on the right-hand corner of the article editing window. A pop-up menu then appears with options to select the destination Desk and work stage (i.e. Bureau chief in, Bureau out, etc.) you’d like to submit to.
-         ![](./images/image386.png)
+
+![](./images/image386.png)
 
 You will also use this *‘Send to’* button to move news items between States of a Desk. Stages are set up by your administrator and are used to organise items within a Desk. You can also use this pane to set an Embargo notice on the item until a certain date and time as well as a publishing schedule. **Note that an Embargo does not prevent an article from being published**.
 
@@ -87,7 +91,7 @@ Kills are used to stop clients from using content you sent them (they are requir
 
 ### Spiking
 
-###  ![](./images/image171.png)
+![](./images/image171.png)
 
 Spiking an item means marking it for removal from the Desk workflow (without actually deleting the information, in case it needs to be used in the future). To view all spiked items, click on the Spiked Items icon on the Workspace Panel.
 
@@ -107,19 +111,21 @@ Creation templates create content with a specific profile. If you’re a court r
 
 #### Multiedit
 
- ![](./images/image88.png)This is the Multiedit button.
+![](./images/image88.png)
+
+This is the Multiedit button.
 
 You will see the Multiedit button at the top of the article editing window. The *Multiedit* button allows you to toggle between multiple open content items, as well as to display two news items side-by-side in editing mode. You can enable the Multiedit mode for an article in the action menu at the top of the article editing window. You will find the Multiedit button at the top of the article list. You can select up to 12 articles to open in Multiedit mode at the same time.
 
 #### Highlights
 
-#### ![](./images/image119.png)
+![](./images/image119.png)
 
 The Highlight icon located on the Workspace Panel allows you to view Highlight lists. Highlight lists are most commonly used for content indexes, top-10 lists, section features and all manner of user-curated lists. Highlights can be generated automatically against user-defined metadata, or set up for manual curation. Highlight lists can be scheduled for publication or distribution. Most journalists will not have permission to add items to a Highlight list.
 
 #### Versioning
 
-####  ![](./images/image305.png)
+![](./images/image305.png)
 
 While an item is open for editing, you can click the *Versioning* icon located in the Editor Sidebar on the right-hand side of the article editing pane to display previous saves or revert back to earlier versions of a content item.
 
@@ -128,6 +134,7 @@ While an item is open for editing, you can click the *Versioning* icon located i
 Annotations are a useful Superdesk feature that allows journalists to add additional information to their articles. Annotations are specially designed for information that is often appended to specific text items. Annotations can either be created in the Hamburger menu, within the Annotations Library, or within the editor while creating an article.
 
 ![](./images/image183.png)
+
 To add an annotation to text in the body of your article, highlight the text and click the annotations button. [Read more about Annotations](#using-the-annotations-feature).
 
 ### Custom Workspaces and Personal Space
@@ -136,7 +143,9 @@ Custom Workspaces are configurable individual workspaces accessible from the Des
 
 Customising your Custom Workspace Dashboard is a great way to monitor several projects in one spot, without having to click back and forth between Desks.  Only you can access your Custom Workspaces, so you can customise your Custom Workspace Dashboard and Custom Workspace Monitoring tab to suit your individual workflow. Dashboard of Desks have widgets that are determined by the Desk manager.
 
-![](./images/image27.png) Personal Space is an icon located on the Workspace Panel.
+![](./images/image27.png)
+
+Personal Space is an icon located on the Workspace Panel.
 
 Clicking on this icon in the Workspace Panel displays all the articles and items you have created in your Personal Space. Only you can view or edit items in your Personal Space. To create a new Personal Item, click the Create icon in the top-right corner of the Personal Space. You can send your Personal Items to a Desk workflow using the purple ‘*Send to’* button in the article editing window.
 

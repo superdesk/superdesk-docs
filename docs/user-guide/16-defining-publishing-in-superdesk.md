@@ -264,6 +264,7 @@ Within the Publish Queue can see and search for published content items. You can
 ![](./images/image299.png)
 
 The Publish Queue displays a list of all of the items that are scheduled to be published, or have been published. Every article in the Publish Queue comes with a unique number identifier and a sequence number. The Status column will tell you if an article failed to publish successfully.
+
 ![](./images/image279.png)
 
 The action column on the far right of the article entry has a button to resend an article. It is possible to resend articles that have successfully published, as well as items that have failed to publish. **If you choose to resend an article, the Unique Name identifier will stay the same, but a new sequence number will be assigned.**
