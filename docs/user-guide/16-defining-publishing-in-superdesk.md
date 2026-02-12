@@ -30,45 +30,45 @@ Content Filters allow you to create a series of criteria through which Superdesk
 
 To get started with Content Filters, click on the *Hamburger menu \> Settings \> Content Filter*. You will notice that there are three tabs along the top of the Content Filters pane: Filters, Filter Conditions and Filter Search.
 
-![](./images/image296.png)
+![](./images/image341.png)
 
 Before you can apply a Content Filter, you must first create at least one Filter Condition.
 
-![](./images/image297.png)
+![](./images/image116.png)
 
 To create a new Filter Condition, click the *Filter Conditions* tab along the top of the pane, then click the \+*ADD NEW* button in the top right corner. A new window will open.
 
-![](./images/image298.png)
+![](./images/image379.png)
 
 The NAME field is for labelling your filter condition. Using a descriptive NAME will help other users understand what your filter does.
 
 The FIELD drop-down menu allows you to select which metadata fields of the item to look at when filtering. The complete list of your instance’s available metadata fields is shown below:
 
-![](./images/image299.png)
+![](./images/image380.png)
 
 The OPERATOR field gives you logical operators to further define your condition. For fields where you select from controlled vocabularies (lists of items) it is simply: **in** or **nin** (not in), for those fields that refer to text box metadata fields, there are more operators such as: **like, notlike, startswith,** and **endswith.** Depending on which field you have chosen, a different subset of operators will be available.
 
-![](./images/image300.png)
+![](./images/image328.png)
 
 The VALUES selection will look different depending on which FIELD you have chosen. You might be required to input text, or you may need to choose a predetermined value from a drop-down menu. Note that if you select multiple values, the filter query will look for anything with either value 1 OR value 2\.
 
-![](./images/image301.png)
+![](./images/image332.png)
 
 In the example above, we have selected values from a predetermined list of subjects, which is our chosen FIELD. Click the square Create icon in the values section to add multiple values. In the example above, we are creating a content filter for items which have either sport or education as their subject.
 
-![](./images/image302.png) To remove a value, mouse-over and click the ‘x’.
+![](./images/image208.png) To remove a value, mouse-over and click the ‘x’.
 
 Once you’ve entered your NAME, FIELD, OPERATOR and VALUES, save your Filter Condition.
 
 #### Assemble and test Content Filters
 
-![](./images/image303.png)
+![](./images/image289.png)
 
 To create a new Content Filter, click the FILTERS tab, then click the \+*ADD NEW* button in the top right corner of the Filters tab.
 
 Note that your Content Filters can be made up of a single condition or a set of multiple conditions. For clarity, the NAME for your Content Filter should reflect the types of conditions that it is using.
 
-![](./images/image304.png)
+![](./images/image256.png)
 
 **Global Block \-** When a filter is configured as a 'Global Block' the content it defines will be blocked by default to all Subscribers. It is unblocked for specific Subscribers by deactivating it on the Applied Global Block Filters tab of the Subscriber form.
 
@@ -76,11 +76,11 @@ Note that your Content Filters can be made up of a single condition or a set of 
 
 A single Filter Statement can search for multiple overlapping conditions. You can set up the statement to search for more than one condition in a single operation by adding multiple conditions to the same Filter Statement. First, create a ***Filter Statement 1*** by selecting one of your previously created Filter Conditions*.* Then click on the *ADD* button within the filter statement box. You will see the filter conditions that you have already added at the bottom of the Filter Statement box.
 
-![](./images/image305.png)
+![](./images/image11.png)
 
 Clicking the *ADD FILTER STATEMENT* button at the bottom of the window will add another Filter Condition in a new statement. Each separate Filter Statement will give you another query in addition to the one that you have currently input.
 
-![](./images/image306.png)
+![](./images/image360.png)
 
 Once you have input Filter Conditions, you will see text appear in the FILTER PREVIEW, below the filter statements. The conditions will be separated by **AND** or **OR** depending on if they were input in the same Filter Statement (AND) or separate Filter Statements (OR).
 
@@ -90,7 +90,7 @@ You can also use other Content Filters to create a query, and you can even combi
 
 You can test the filter to ensure that it is working correctly. To do so, copy an article GUID (from the article information tab in the article editing window) and paste it to the Filter Test field at the bottom of the window. You will see if your target test article matches the Filter Condition or not.
 
-![](./images/image307.png)
+![](./images/image316.png)
 
 #### Filter Search
 
@@ -108,11 +108,11 @@ Select your FIELD, OPERATOR and VALUE used to create the Condition, then click t
 
 Once you’ve created your Content Filter, you will see it appear in the Filters tab. Hovering over the Filter will show you options to test, edit or delete your Filter.
 
-![](./images/image310.png)
+![](./images/image136.png)
 
 Testing the Content Filter using this checkmark icon will open a new window to display a list of all articles that match the Filter conditions. You can also view a list of articles that do not match by clicking on the Non-Matching parameter, displayed below.
 
-	![](./images/image311.png)
+	![](./images/image221.png)
 
 ###
 
@@ -122,7 +122,7 @@ The Internal Destinations feature allows you to route a copy of a published arti
 
 To configure an Internal Destination, select the *Hamburger menu \> Settings \> Internal Destinations*.
 
-![](./images/image312.png)
+![](./images/image210.png)
 
 When you publish a news item in Superdesk, if you have Internal Destinations configured, the article will not only be published to your subscribers, but also to the designated Desk(s) as defined by these settings.
 
@@ -130,11 +130,11 @@ Generally, Publishing sends the news item to a Destination in a specific output 
 
 Users can select the Desk, Stage, and a macro to be run on the content (optional). The macro is usually used to modify the content (e.g. changes its metadata).
 
-![](./images/image313.png)
+![](./images/image369.png)
 
 To create an Internal Destination, click the Create icon in the top-right corner of the Internal Destinations pane.
 
-![](./images/image314.png)
+![](./images/image19.png)
 
 In the example above, the news items matching the "Desk \= Karel" Content Filter will be copied and sent to the "Ontario" Desk: "Working" Stage, and an "Extract Html Macro" macro will be applied. In other words, everything published from the Desk Karel will be sent to Desk Ontario, and modified by a macro.
 
@@ -185,7 +185,7 @@ In the Content Flow section of the Settings menu, users can define:
 
 Subscribers are customers. Each Subscriber can receive a mixture of Products, to any number of Destinations. A Subscriber can also be another distribution system or systems. For a digital publisher, the Subscriber can be a website, mobile app or other asset.
 
-![](./images/image318.png)
+![](./images/image236.png)
 
 To define your Subscribers, click on the *Hamburger menu \> Settings \> Subscribers*. Click on the \+*ADD NEW* button in the top right corner of the corner of the Subscribers pane.
 
@@ -209,7 +209,7 @@ This file contains controlled vocabularies (mainly lists of metadata). The Subsc
 
 Below is an example of a typical new Subscriber window, and descriptions of the various fields you might find:
 
-![](./images/image319.png)
+![](./images/image394.png)
 
 **Status:** Active / inactive switch.
 
@@ -221,21 +221,21 @@ Below is an example of a typical new Subscriber window, and descriptions of the 
 
 **Subscriber Codes:** These provide a way of assigning a subscriber-specific token or key for use by upstream distribution platforms.
 
-![](./images/image320.png)
+![](./images/image173.png)
 
 **Targetable by Users:** Enabling this toggle lets editors select the Subscriber when they create a story and send it to the Subscriber directly even if the story doesn't match any of the Products (Content Filters) that the Subscriber set up to receive.
 
 **Products:** You can select multiple products from this list. As noted in the previous section, Products are applications of Content Filters and regional restrictions. If you don’t select any Product here, all news items that are published can be sent to this Subscriber.
 
-![](./images/image321.png)
+![](./images/image397.png)
 
 **Sequence number settings:** Sequence numbers are a range of IDs in the Publish Queue. These Transmission Sequence Numbers are intended to be passed to end users as part of the delivered document format. Historically they provided a way for a Subscriber to detect a break in transmission continuity on a given wire and quote back to the source the range of sequence numbers missed so that a retransmission could be arranged. Nowadays they are largely called for in order to support legacy data formats which expect a sequence number (for example: ANPA 1312 and IPTC 7901), although they can also be used in the construction of some of the metadata required within NewsML. Conventionally sequence numbers would run either 1-999 or 1-9999 with a rollover at either the upper numerical limit, or at midnight each day. It was considered good practice to not have a sequence number repeated within a 24 hour news cycle, and this would usually dictate both the upper numerical value and the rollover method chosen.
 
-![](./images/image322.png)
+![](./images/image229.png)
 
 **Destination**: Destinations are the *where* in the publishing process. You can have multiple destinations for one Subscriber.
 
-![](./images/image323.png)
+![](./images/image405.png)
 
 **Delivery Type**: You can select from the previously configured formats and delivery types (pictured above). Depending on your selection, you may have additional fields to define.
 
@@ -249,7 +249,7 @@ You are now ready to publish your news items\! When you click the PUBLISH button
 
 The Publish Queue contains a list of all published items and their associated destinations. Depending on user permissions, not all users will be able to access the information in the Publish Queue. Users can access the Publish Queue from the Hamburger menu in the top-left corner of the Superdesk interface.
 
- ![](./images/image324.png)
+ ![](./images/image109.png)
 
 If an article failed to publish successfully, you will see that recorded in the Publish Queue and you have the option to resend the item directly from the Publish Queue panel.
 
@@ -257,24 +257,24 @@ When content is labeled as "published" in Superdesk, it only means that somebody
 
 The Publish Queue gives Superdesk users an overview on what has been sent out, and what has actually been received by your Subscribers.
 
-![](./images/image325.png)
+![](./images/image348.png)
 
 Within the Publish Queue can see and search for published content items. You can also search by Subscriber, Destination, and their publishing *status*. Within the Publish Queue, you can also cancel or resend the items.
 
-![](./images/image326.png)
+![](./images/image299.png)
 
 The Publish Queue displays a list of all of the items that are scheduled to be published, or have been published. Every article in the Publish Queue comes with a unique number identifier and a sequence number. The Status column will tell you if an article failed to publish successfully.
-![](./images/image327.png)
+![](./images/image279.png)
 
 The action column on the far right of the article entry has a button to resend an article. It is possible to resend articles that have successfully published, as well as items that have failed to publish. **If you choose to resend an article, the Unique Name identifier will stay the same, but a new sequence number will be assigned.**
 
 Clicking on an article in the Publish Queue will open a tab on the right with an article summary. You will see tabs for item content, metadata, duplicates and full item history. Note that items cannot be edited from the Publish Queue.
 
-![](./images/image328.png)
+![](./images/image140.png)
 
 Navigate through the Publish Queue by using the page arrows beside the search icon at the top of the Publish Queue window.
 
-![](./images/image329.png)
+![](./images/image228.png)
 
 Sort the view order of the news items in the Publish Queue list, by clicking the Subscriber, Ingest Provider, Content type, or Status drop-down menus along the top of the Publish Queue window and selecting from the displayed options. For example, the Status drop-down menu is displayed above.
 
@@ -282,7 +282,7 @@ Search the Publish Queue by clicking on the search icon and inputting keywords f
 
 Double clicking on an item in the Publish Queue will open a pane on the right from which you can see three tabs: Content, Metadata and Item History.
 
-![](./images/image330.png)
+![](./images/image124.png)
 
 The Content tab shows a preview of the news item. The Metadata tab displays all of the info that would be shown in the info tab of the editor including its unique name, GUID and state. The Item History tab shows all of the article’s versions and what was updated in each version.
 
@@ -292,20 +292,20 @@ Your Superdesk instance might also include a Legal Archive. As with most modules
 
 The Legal Archive is an immutable forensic record of every item published, from its ingest or creation and including every subsequent edit action: what was changed, when and by whom. This archive is kept as an evidential record to use in cases of commercial dispute or legal action.
 
-![](./images/image331.png)
+![](./images/image49.png)
 
 Admin users can access the Legal Archive from the Hamburger menu in the top-left corner of the Superdesk interface.
 
-![](./images/image332.png)
+![](./images/image349.png)
 
-![](./images/image333.png) This is the  Advanced Search icon.
+![](./images/image128.png) This is the  Advanced Search icon.
 
 You can search the articles in the Legal Archive by clicking the search icon in the upper-left corner of the Legal Archive window. This will open a tab on the left where you can input search criteria in various text boxes.
 
-![](./images/image334.png)
+![](./images/image18.png)
 
 You can search by Story ID, Headline, Slugline, Story Text keywords, or by publishing dates. You can adjust how many entries are displayed per page by using the drop-down menu beside Page Size at the top of the search window.
 
-![](./images/image335.png)
+![](./images/image398.png)
 
 Just as with other list views within Superdesk, articles from the Legal Archive can be previewed by left-clicking on them once. A tab will open on the right with an overview of the article metadata. To open the article in its full form, click the Action menu and select *Open*. Note that articles in the Legal Archive cannot be edited or deleted.

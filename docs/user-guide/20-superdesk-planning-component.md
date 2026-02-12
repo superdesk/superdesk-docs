@@ -6,7 +6,7 @@ The Superdesk Planning Component can ingest external customer-facing calendars t
 
 External calendar and event metadata can be ingested and applied to the content that journalists produce, saving them from entering routine details when they need to focus on delivering a story to your audience. With the Superdesk Planning Component, Superdesk’s internal notifications will keep users on track and informed. The component’s alerts can also be integrated with 3rd party programs, such as Slack.
 
-![](./images/image383.png) Planning icon 	![](./images/image384.png) Assignments icon
+![](./images/image340.png) Planning icon 	![](./images/image317.png) Assignments icon
 
 If your organization is using the Superdesk Planning Component, you may see the Planning icon and the Assignments icon in the Workspace Panel.
 
@@ -14,21 +14,21 @@ Clicking the Planning icon in the Workspace Panel will take you to the Planning 
 
 In the Planning panel, you can create two different types of items: Events and Planning Items. These items are created by clicking the Create icon in the top-right corner of the panel.
 
-![](./images/image385.png)
+![](./images/image102.png)
 
 **Events** \- Events have a duration, and can either be recurring, or a one-time occurence. Events can be ingested from Superdesk-external calendars and automatically generated. Events are not assigned to users, but rather exist within Superdesk to organize coverage. Once an Event is created or ingested, it can be used to generate a Planning Item.
 
 **Planning Items** \-  Planning Items are used to assign coverage details to your Superdesk team. Each Planning Item can have several elements of assigned coverage, each of which can be assigned to different users. Planning Items can be exported from the Planning pane to generate articles in the Superdesk Monitoring view. Planning Items can be created independently of Events.
 
-![](./images/image386.png)
+![](./images/image230.png)
 
 The action menu in the top right corner of the Planning pane allows you to create Agendas and designate Featured Stories. Featured Stories allow users to curate specific Agenda items to send to Newshub. Featured Stories form a digest of the day’s most important events. Users can then view these Featured Stories by using a toggle within Newshub.
 
-![](./images/image387.png)
+![](./images/image68.png)
 
 **Agendas** are used to group Planning Items together. Agendas are optional and they will appear in the Planning Item description in the list view of the Planning pane, as shown above.
 Items marked as **Featured Stories** will appear with a red star in the Planning pane list view.  Just as in the Superdesk Monitoring view, items that are marked with a red stripe on their left margin are currently locked. This means they cannot be edited by users other than the user that has it opened, unless the item is unlocked by an admin.
-![](./images/image388.png)
+![](./images/image54.png)
 When a Planning Item or Event has been **posted** you will see a green ‘p’ to the left of the item’s slugline. Posted Events and Planning Items are items that have been made public. In order for an Agenda item to appear in Newshub, it must be posted.
 
 #### Creating New Planning Items
@@ -50,17 +50,17 @@ The metadata fields are as follows:
 **Internal Note:** Used for Planning Component internal notes. The notes can be viewed by the user that is fulfilling any associated assignment but will not appear in the Editor during item creation.
 
 **Agenda:** Agendas are a useful way to sort Planning Items. The Agenda will appear in the list view of the Planning pane.
-![](./images/image389.png)
+![](./images/image266.png)
 
 **Details:** In the Details section, you can add Editorial Notes, Category, Subject, and Urgency. These fields correspond to the metadata fields in new item creation.
 
 **Coverages**: Once the Planning item is created, additional coverage cannot be added once the Planning Item is posted, so be sure to assign all the pieces you need here before posting. If you need to add additional coverage, you will need to unpost the Planning Item before adding more. Click on the Create icon to add a coverage type. Some examples are shown below:
 
-![](./images/image390.png)
+![](./images/image137.png)
 
 When assigning coverage, be sure to **assign it to a Desk**, and optionally to a specific user within that Desk. If you do not assign a Desk or coverage, and export the Planning Item, it will be created in the most recently assigned Desk.
 
-![](./images/image391.png)
+![](./images/image37.png)
 
 Click the ASSIGN button on the coverage section to select a specific Desk and assignee. Be sure to choose the type of coverage you want and the due date. Once you have entered all the details, be sure to hit the CREATE button to make the Planning Item.
 
@@ -68,7 +68,7 @@ Click the ASSIGN button on the coverage section to select a specific Desk and as
 
 You will need to add any assigned coverage to the workflow in order for it to be visible in the Assignments tab for your selected Desk or users. Find the coverage in the Planning Item editing pane, then use the action menu at the top of each coverage to select the ‘Add to Workflow’ option.
 
-![](./images/image392.png)
+![](./images/image265.png)
 
 Once the coverage is added to the workflow, the coverage will appear as an assignment in the Assignments tab for the selected user.
 
@@ -87,7 +87,7 @@ To configure an **automatic Event ingest feed**, click *Hamburger menu \> Settin
 To **manually create an Event**, click the Create icon in the top-right corner of the Planning Pane.
 
 In the Event creation pane, fill in as much information as possible:
-![](./images/image393.png)
+![](./images/image74.png)
 
 **Repeat toggle**: If the repeat toggle is active (blue), you can choose how often the Event occurs. Choose from options such as daily, every x days, weekly, every x weeks, once monthly, yearly etc.
 
@@ -107,11 +107,11 @@ In the Event creation pane, fill in as much information as possible:
 
 **Location:** Define the Event location by typing in the textbox. Use the OPENSTREETMAP button to search suggested options based on the information you entered, or use the ADD NEW LOCATION button to add location details to your list of commonly used locations. The fields in the ADD NEW LOCATION pop-up sh own below:
 
-  ![](./images/image394.png)
+  ![](./images/image318.png)
 
 **Contacts:** Contact details for the Event creator should be entered here. If the contact doesn’t automatically appear when you type their name, use the ADD NEW CONTACT button to create a new entry. The pop-up window is shown below:
 
-![](./images/image395.png)
+![](./images/image253.png)
 
 **Details**: The Details section of the Event creation pane allows you to add additional metadata details to your Event: category, subject, long description, internal note, editorial note.
 
@@ -123,11 +123,11 @@ In the Event creation pane, fill in as much information as possible:
 
 Once your Event is created, you can create an associated Planning Item, using the action menu to the right of the Event entry in the Planning pane list view.
 
-![](./images/image396.png)
+![](./images/image36.png)
 
 The action menu for each created Event is displayed below:
 
-![](./images/image397.png)
+![](./images/image100.png)
 
 #### Export a Planning Item
 
@@ -136,7 +136,7 @@ Once you have created a Planning Item, you can export it to a Desk’s Monitorin
 **Step 1\)** In order to export an article from the Planning interface to a Monitoring view, close the Planning item, if it’s open.
 
 **Step 2\)** Use the checkbox in the left-most column of the Planning view to select the item, as shown below:
-![](./images/image398.png)
+![](./images/image51.png)
 
 **Step 3\)** With the checkbox selected, click the EXPORT AS ARTICLE button to send the Planning Item to the Monitoring view. If you assigned coverage in the Planning Item to a Desk, the item will be created in that Desk. If you didn’t assign any coverage, the article will be created in the most recent Desk.
 
@@ -146,28 +146,28 @@ Alternatively, when you assign coverage to a specific Desk and user, they can cr
 
 Both Planning Items and Events can be posted. This means, depending on your setup, that your Planning Item or Event will be visible to your subscribers. In order to post an Event or Planning Item, you will need to open the item, and then click the green POST button at the top of the pane.
 
-![](./images/image399.png)
+![](./images/image329.png)
 
 Once posted, you will see a green ‘p’ next to the item in the Planning list view.
-![](./images/image400.png)
+![](./images/image182.png)
 If you are editing the Event or Planning Item that you have created, you will see options to update or unpost the item.
 
-![](./images/image401.png)
+![](./images/image232.png)
 
 #### Assignments and Assigned Coverage
 
 When you are assigned coverage via the Superdesk Planning Module, you can view your assigned tasks, and tasks that have been assigned to your Desk in the Assignments tab.
 
-![](./images/image402.png) Assignments tab
+![](./images/image151.png) Assignments tab
 
 You will notice two buttons at the top of the Assignments pane: Desk Assignments and My Assignments:
 
-![](./images/image403.png)
+![](./images/image271.png)
 
 The Desk Assignments will vary depending on which Desk you are viewing. Be sure to check the current Desk, as noted by the Desks menu. In the example above, we are viewing the Desk Assignments in the World News Desk. The coverage that has been assigned to you directly is shown in the My Assignments list view. These are visible only to you.
 
 Clicking on an item in the Assignments list view, will provide several options. The options may vary depending on your permissions and the state of the assignment:
-![](./images/image404.png) ![](./images/image405.png)![](./images/image406.png)
+![](./images/image113.png) ![](./images/image134.png)![](./images/image6.png)
 
 **Reassign:** If the task was assigned to you by mistake, or if you think the task was assigned to the wrong Desk, use this *Reassign* option to send the task to the correct location.
 

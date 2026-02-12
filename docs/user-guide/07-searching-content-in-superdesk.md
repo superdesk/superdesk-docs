@@ -4,24 +4,24 @@
 
 Superdesk has a convenient built-in search function for finding news items. The Search function is also how you can view all the newly ingested articles, photos, videos and content packages. Each desk has a desk-specific search located in the monitoring pane. If you would like to search the entire content of Superdesk, click the Search tab located on the Workspace Panel.
 
-![](./images/image82.png) This is the Search icon on the Workspace Panel.
+![](./images/image172.png) This is the Search icon on the Workspace Panel.
 
 Clicking the Search icon in the Workspace Panel enables you to browse all the news items. You can browse all types of items using the Search feature. This includes published, killed, ingested or archived items.
 
-![](./images/image83.png)
+![](./images/image60.png)
 
 You can perform a search by typing in keywords related to the article you’re looking for in the text box beside the search icon.
 
-![](./images/image84.png)
+![](./images/image73.png)
 
 If you type multiple words, Superdesk will search for items containing all of those words simultaneously. In the example above, we are searching for an article that contains both ‘giraffes’ and ‘IWGP’.
 
-![](./images/image85.png) This is the Advanced Search icon.
+![](./images/image323.png) This is the Advanced Search icon.
 
 You can apply additional filters and parameters to your search by clicking on the Advanced Search icon. Inside the Advanced Search menu, you will find several ways to refine your search.
 
 You can define the Stage of the content item you’re looking for: ingested, production, published or archived. You can choose multiple selections for a single search. When the buttons turn white, articles in those states will not be included in your search. To search only for newly ingested articles, for example, leave only the *Ingest* button in blue.
-![](./images/image86.png)
+![](./images/image148.png)
 
 Below the production stage buttons there are two tabs, one for parameters, and one for filters.
 
@@ -55,27 +55,27 @@ Once you have input all the applicable information into the search parameters, y
 
 To the right of the Parameters tab, you will also see a Filters tab. This can help you further refine your search:
 
-![](./images/image87.png)
+![](./images/image67.png)
 
 For content types filters, you can search for articles containing just pictures, just text, or both by clicking on *composite*. You could also search for audio or video files.
 
 Advanced search filters include: Content types, Desk, Ingest Source, News Category, Genre, Urgency, Priority and Flags. In the Desks section, you can further refine your search by checking off the boxes beside particular desks, to make your search desk-specific.
 
-          ![](./images/image88.png)
+          ![](./images/image87.png)
 
 The final filter is by date. You can set a date range to search for articles created or modified between particular time periods by clicking on the calendar icons and inputting specific dates, or by selecting the pre-made buttons for *LAST 24 HOURS, LAST 7 DAYS* or *LAST 30 DAYS*.
 
 If you find yourself searching the same parameters over and over again, you can choose to save the search using the *SAVE SEARCH* button. In addition to saving the parameters in the Advanced Search menu, it also makes the search available for use in the Monitoring widgets on your Desk Dashboard.
 
-![](./images/image89.png)
+![](./images/image388.png)
 
 When you have input your search information, blue boxes will appear at the top of the results window. If you’re searching for multiple parameters at the same time, you will see multiple blue boxes. You can remove a parameter and widen your search by clicking on the *x* in the blue box to remove the filter.
 
-         ![](./images/image90.png)
+         ![](./images/image142.png)
 
 In the top-right section of the search results window, you have the option to rearrange your search results. The drop-down sort menu allows you to arrange by most recent, date created, news value, category, alphabetically by slugline, priority, or alphabetically by genre. Clicking on the reverse pyramid beside the sorting options will allow you to view your results in reverse order.
 
-![](./images/image91.png)
+![](./images/image206.png)
 
 By default, the search results appear in a list view. You can switch to a grid-view by clicking on the grid icon in the top-right corner. The grid view is especially useful for viewing news items with images because it allows space for thumbnail views of the pictures.
 

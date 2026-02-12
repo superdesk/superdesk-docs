@@ -2,21 +2,21 @@
 
 New Desks can be created, and existing Desks can be edited in the Hamburger Menu by Superdesk admins, or users with the appropriate permissions. To get started with Desk configuration, select *Hamburger Menu \> Settings \> Desks*.
 
-![](./images/image252.png)
+![](./images/image203.png)
 
 In the Desk Management pane, you can create a new Desk by clicking on the ‘+ ADD NEW’ button in the top right corner of the pane.
 
-![](./images/image253.png)
+![](./images/image132.png)
 
 This panel is also where you can edit existing Desks.  Click the Action menu icon in the top right corner of the desk name to edit an existing Desk.
 
-![](./images/image254.png)
+![](./images/image191.png)
 
 In the Action menu, select the *Edit* option and a new window will open.
 
 Whether creating a new Desk, or editing an existing desk, you will see the same window:
 
-![](./images/image255.png)
+![](./images/image296.png)
 
 #### General Desk Settings Tab
 
@@ -42,16 +42,16 @@ DEFAULT CONTENT PROFILE Selecting a Content Profile from this drop-down menu wil
 
 In the Edit Desk / Add New Desk window, you will also find a Stages tab. Stages reflect the workflow of each Desk. Sometimes Stages are steps an article must go through in order to be published. For example, an article might go through more than one phase of editing before it is sent off to be published.
 
-![](./images/image256.png)
+![](./images/image161.png)
 
 From this Stages tab, you can make new Stages to a Desk by clicking the grey ‘+’ button in the Work Stages section. If you add a new Stage, the maximum length for the name is 40 characters.
 
-![](./images/image257.png)
+![](./images/image357.png)
 
 You can edit the current Stages by hovering over the stage you wish to edit and clicking the pencil icon that appears to the right of the Stage name.
 
 The GLOBAL READ toggle allows items that are in this Stage to be read by all users. If GLOBAL READ is turned off, only users assigned to the Desk will be able to see content from that stage. If GLOBAL READ is turned on, the Stage will be available for use in any Monitoring view on any Desk. You can also use the LOCAL READ ONLY toggle to ensure that items in this Stage cannot be edited.
-![](./images/image258.png)
+![](./images/image189.png)
 
 If the WORKING STAGE toggle is set to blue, it indicates that any news item or package created in this Desk will be sent to this Stage.
 
@@ -67,7 +67,7 @@ The OUTGOING RULE and MOVED ONTO STAGE RULE will also apply a selected macro to 
 
 In the People tab of the Edit Desk window, you can add or remove users from the Desk. To add a user, type their name into the search bar. When you select the name of the person, they will be automatically added to the Desk, just click the ‘SAVE & CONTINUE’ button to confirm the team changes.
 
-![](./images/image259.png)
+![](./images/image33.png)
 
 To remove a user from a Desk, hover over the user and click the *x* that appears on the right.
 
@@ -75,7 +75,7 @@ To remove a user from a Desk, hover over the user and click the *x* that appears
 
 The final tab in the Edit Desk window is for Macros. All of the available macros are displayed here. You will need the assistance of a programmer to create your Macros.
 
-![](./images/image260.png)
+![](./images/image31.png)
 
 When you choose a Macro for your incoming rule in the General Tab, it will be one of these Macros.
 
@@ -99,19 +99,19 @@ You need to activate the *Desk Routing* macro for each stage of the *Source Desk
 
 To add a routing macro, select *Hamburger menu \> Settings \> Desks*. Select your *Source Desk* and then click the Stages tab in the Edit Desk window.
 
-![](./images/image261.png)
+![](./images/image389.png)
 
 Click the edit icon for each Stage of the Source Desk that will receive content. In the INCOMING RULE drop-down menu select the Desk Routing macro, then click the SAVE button.
 
-![](./images/image262.png)
+![](./images/image300.png)
 
 **Step 2\)** Add **Desk Router widget** to the *Source Desk*’s Dashboard by clicking the Create icon in the top-right corner of the Dashboard pane. This will open a new window from which you should select the Desk Router widget:
 
-![](./images/image263.png)
+![](./images/image12.png)
 
 **Step 3\)** In the Desk Router Dashboard widget, select the ***Target Desk*** from the list under ‘*route incoming content to’.* In the example below, the Target Desk is called “National”:
 
-![](./images/image264.png)
+![](./images/image344.png)
 
 #### Target Desk Configuration
 
@@ -121,23 +121,23 @@ Click the edit icon for each Stage of the Source Desk that will receive content.
 
 On the Target Desk, select *Search → Advanced Search* and find **Marked Desks** in Parameters tab.
 
-![](./images/image265.png)
+![](./images/image91.png)
 
 Select the Target Desk from the list of available Desks, click "Search", and then "Save Search". Name the search, and do not forget to make it “global”.
 
-![](./images/image266.png)
+![](./images/image152.png)
 
 **Step 2\)** Adding the Saved Search to the Target Desk’s **Monitoring View**
 
 Go to *Hamburger menu* \> *Settings \> Desks,* and open ***Monitoring Settings*** of the Target Desk.
 
-![](./images/image267.png)
+![](./images/image150.png)
 
 Open the *Saved Searches* tab and activate the search that you created in the previous step. You can also select the *Reorder Sections* tab to place the Saved Search at the top of the screen, if needed.
 
 Users will see the following in the monitoring:
 
-![](./images/image268.png)
+![](./images/image4.png)
 
 The articles from the Source Desk will have the bell icon next to them and clicking it you can see for which Desk(s) the story has been marked.
 
@@ -145,7 +145,7 @@ The articles from the Source Desk will have the bell icon next to them and click
 
 Go to the Source Desk dashboard and click the ‘*Start Routing’* button in the desk router widget. Make sure the Target Desk is selected. From now on all incoming content will be marked for the Target Desk.
 
-![](./images/image269.png)
+![](./images/image358.png)
 
 Users of the Target Desk can check the same widget to see from which desk the content is being "routed". In the picture above, there is an active routing from *Adelaide* and an inactive from *Broadcast* desk.
 
@@ -153,6 +153,6 @@ Users of the Target Desk can check the same widget to see from which desk the co
 
 Go to Desk Dashboard and click the ‘*Stop Routing’* button in the desk router widget:
 
-![](./images/image270.png)
+![](./images/image322.png)
 
 The "marked for" attribute of all stories which were marked by this feature (i.e. not the ones marked manually by users) will be removed by this action.
