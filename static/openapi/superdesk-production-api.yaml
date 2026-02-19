@@ -5,17 +5,19 @@ info:
   version: "v1"
   description: |
     Production API server provides stable and versioned endpoints for third-party apps to consume news content from Superdesk.
-    
+
     Production API uses the same DB and Elasticsearch index as the main Superdesk app, unlike Content API which has a separate DB.
-    
+
     Production API uses versioned endpoints to provide stable, non-breaking changes API for third-party apps.
+
+    Authentication is based on OAuth 2.0 and uses the Superdesk Auth Server: https://superdesk.readthedocs.io/en/latest/auth_server.html
 
 servers:
   - url: /prodapi/v1
     description: Production API v1 Server
 
 security:
-  - bearerAuth: []
+  - oauth2Auth: []
 
 paths:
   /:
@@ -513,14 +515,16 @@ paths:
 
 components:
   securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
+    oauth2Auth:
+      type: oauth2
       description: |
-        JWT token authentication. Third-party apps must retrieve token using AuthServer and provide it with every request.
+        OAuth 2.0 client credentials flow via Superdesk Auth Server.
         
-        Example: Authorization: Bearer your.jwt.token
+        See: https://superdesk.readthedocs.io/en/latest/auth_server.html
+      flows:
+        clientCredentials:
+          tokenUrl: https://<superdesk-url>/api/auth_server/token
+          scopes: {}
 
   parameters:
     guid:
